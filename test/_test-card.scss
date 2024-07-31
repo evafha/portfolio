@@ -1,0 +1,89 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    grid-gap: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.card-item {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 10px;
+    color: $white;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    @include center-div;
+    height: 20%;
+    z-index: 1;
+    font-size: 1em;
+    text-align: center;
+}
+
+.text-hover {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $black;
+    padding: 15%;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+    height: 100%;
+    z-index: 0;
+    @include center-div;
+}
+
+.text-hover p {
+    font-size: 1.3em;
+}
+
+.card-item:hover .text-hover {
+    opacity: 0.8;
+}
+
+.course {
+    font-weight: bold;
+}
+
+.year {
+    font-size: smaller;
+}
+
+/*
+.card-divider {
+    display: card;
+    card-template-columns: 40% 60%;
+    margin: 20px;
+    @include center-div;
+    border-radius: 5px;
+}
+
+.hoover {
+    overflow: hidden;
+}
+
+.card-divider img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-divider:hover img {
+    transform: scale(1.2);
+}
+*/

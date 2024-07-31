@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Eva Fossen Haugum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- kan vær fint med sticky navbar eller en sidebar? -->
+
+
+    <header>
+        <!-- Skip to main content link for screen readers -->
+        <a href="#mainContent" class="skip-to-content">skip to main content</a>
+
+        <nav aria-label="Main Navigation">
+            <div class="hamburger-cross" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <a href="index.html" class="menu-logo">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
+
+            <ul>
+                <li><a href="index.html" class="underline">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <!--<li><a href="#projects">Other projects</a></li>-->
+                <li><a href="html/about.html">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainContent"> <!-- skips to here -->
+
+        <!-- WELCOME/INTRODUCTION MESSAGE -->
+        <div class="welcome">
+            <div>
+                <h1>Hi, I am Eva</h1>
+                <p>I am an ambitious Interaction Design student based in Gjøvik, currently delving into the fascinating
+                    world of web development with a keen eye for universal design and inclusivity.</p>
+
+            </div>
+        </div>
+
+        <!-- SPACE AND A LINE -->
+
+        <div class="line"></div>
+
+
+        <h2 id="portfolio">Portfolio</h2>
+
+        <div>
+
+            <!-- FIRST PROJECT-->
+            <div class="index-card">
+                <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+
+                <div class="text">
+                    <h3>Web Accessibility, Usability and Ethics</h3>
+                    <p>Web coding course that emphasizes accessibility (WCAG), promoting inclusive website development
+                        for disabilities.</p>
+                    <div>
+                        <span>UX Case Study</span>
+                        <span>Academic</span>
+                        <span>Høsten 2022</span>
+
+                        <button class="button-project underline"><a href="html/web-accessibility.html"> &#11208; View
+                                project</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacing">
+                <div class="line"></div>
+            </div>
+
+            <!-- SECOND PROJECT -->
+            <div class="index-card swap-content">
+                <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+
+                <div class="text swap-text">
+                    <h3>Web Accessibility, Usability and Ethics</h3>
+                    <p>Web coding course that emphasizes accessibility (WCAG), promoting inclusive website development
+                        for disabilities.</p>
+
+                    <div>
+                        <span>UX Case Study</span>
+                        <span>Independent project</span>
+
+                        <button class="button-project underline"><a href="html/web-accessibility.html"> &#11208; View
+                                project</a></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="spacing">
+                <!--  <div class="line"></div>-->
+            </div>
+
+            <!-- THIRD PROJECT -->
+
+
+            <!-- FOURTH PROJECT -->
+
+
+            <!-- OTHER PROJECT-->
+            <!--<h2 id="projects">Other Projects</h2>
+            <div class="index-card three-grid">
+                <a href="html/web-accessibility.html">
+                    <div>
+                        <img src="assets/images/example.jpg" alt="Your Image" class="image">
+
+                        <div class="text">
+                            <p class="course">Web of Things</p>
+                            <p class="year">Høsten 2023</p>
+                        </div>
+                        
+                    </div>
+                </a>
+
+                <a href="html/web-accessibility.html">
+                    <div>
+
+                        <img src="assets/images/example.jpg" alt="Your Image" class="image">
+
+                        <div class="text">
+                            <p class="course">Web Coding</p>
+                            <p class="year">Høsten 2022</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="html/web-accessibility.html">
+                    <div>
+
+                        <img src="assets/images/example.jpg" alt="Your Image" class="image">
+
+                        <div class="text">
+                            <p class="course">Web Coding</p>
+                            <p class="year">Høsten 2022</p>
+                        </div>
+                    </div>
+                </a>
+            </div>-->
+
+    </main>
+
+    <footer aria-label="Site Footer" id="contact">
+        <div class="footer top-footer">
+            <h2>Contact me</h2>
+            <div>
+                <p><a href="mailto:evafhaugum@hotmail.com">evafhaugum@hotmail.com</a></p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/eva-fossen-haugum/" target="_blank">
+                    <img src="assets/images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/evafha" target="_blank">
+                    <img src="assets/images/github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer bottom-footer">
+
+            <!-- SCROLL TO TOP BUTTON -->
+            <div class="scroll">
+                <a href="#mainContent" aria-label="skip back to top">BACK TO TOP</a>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p class="copyright" tabindex="0">Copyright &#169; 2024 Eva Fossen Haugum</p>
+        </div>
+
+    </footer>
+
+    <script src="js/nav.js" defer> </script>
+
+</body>
+
+</html>

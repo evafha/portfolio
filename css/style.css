@@ -1,0 +1,687 @@
+@charset "UTF-8";
+/*https://www.freecodecamp.org/news/how-to-use-sass-with-css/*/
+/* file import */
+nav {
+  overflow: hidden;
+  background-color: white;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  margin-top: 85px;
+}
+nav a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-logo {
+  float: left;
+}
+.menu-logo img {
+  max-height: 40px;
+}
+
+/* When active, display the ul list as a flex container */
+nav ul.active {
+  display: flex;
+}
+
+/* Styling for the hamburger icon */
+.hamburger-cross {
+  float: right;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-right: 13px;
+  pointer-events: auto;
+}
+
+/* Styling for the bars in the hamburger icon */
+.bar1,
+.bar2,
+.bar3 {
+  width: 28px;
+  height: 3.5px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.4s;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+/* Styling for the bars when the hamburger icon is clicked */
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 770px) {
+  /* Display the ul list as a horizontal row and align it to the right */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 10px;
+  }
+  /* Add margin to the left of each list item */
+  nav li {
+    margin-left: 20px;
+  }
+  /* Hide the hamburger icon on larger screens */
+  .hamburger-cross {
+    display: none;
+  }
+}
+.solution.IDG2012 {
+  background-color: #006081;
+}
+
+/* Skip to content link for accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -400px;
+  /* Position off-screen */
+}
+
+.skip-to-content:focus {
+  position: relative;
+  top: 0;
+  /* Bring into the visible area when focused */
+}
+
+/* Styles for container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Apply grid with 2 columns */
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+  /* Arrange items vertically within the grid */
+}
+
+/* Styles for index cards */
+.index-card {
+  display: grid;
+  grid-gap: 45px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.welcome {
+  /*height: 80vh;*/
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Styles for button */
+.button-project {
+  display: block;
+  border: none;
+  background-color: #ffffff;
+  margin-top: 25px;
+}
+.button-project a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.spacing {
+  margin: 55px;
+}
+
+.line {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+}
+.line::after {
+  content: "";
+  display: block;
+  border-top: 1px solid #DADEDF;
+}
+
+/* Styles for portfolio section heading */
+h2#portfolio {
+  margin: 0 0 40px 0;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* Styles for spans within text */
+}
+.text p {
+  margin: 0; /*fjern?*/ /* Remove default margin */
+}
+.text span {
+  background-color: #ffffff;
+  color: black;
+  margin: 18px 15px 4px 0;
+  /*border: 0.1px solid #DADEDF;*/
+  box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+  -webkit-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+  -moz-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 770px) {
+  .index-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .spacing {
+    margin: 125px;
+  }
+}
+/* Media queries for even larger screens */
+@media only screen and (min-width: 1000px) {
+  .index-card.three-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+footer img:hover {
+  opacity: 0.5;
+}
+footer div {
+  margin: 10px;
+}
+footer p {
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+}
+
+/* Styles for top section of footer */
+.top-footer {
+  padding: 30px 0;
+  background-color: #DADEDF;
+}
+
+/* Styles for bottom section of footer */
+.bottom-footer {
+  background-color: white;
+}
+
+/* Styles for footer text and links */
+footer,
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.scroll a {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px; /* Adjust the spacing between icons as needed */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for copyright text */
+.copyright {
+  font-size: 0.833rem;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 0px;
+  list-style: none;
+  margin-left: 0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 9px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/ ";
+}
+
+ul.breadcrumb a {
+  font-size: 9px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Style the last li with the primary color */
+ul.breadcrumb li:last-child {
+  color: #8245c2; /* Replace with your primary color */
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #8245c2;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 2.3rem;
+  margin: 45px 0 7px 0;
+}
+
+.problem-statement,
+.design-process,
+.solution,
+.learned,
+.my-work {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display {
+  align-items: center;
+  justify-content: center;
+}
+.display h2 {
+  margin-top: 10px;
+}
+.display img {
+  margin: 10px 0;
+}
+
+.solution-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px; /* Adjust the gap between images if needed */
+}
+
+.mobile-mockup {
+  max-height: 350px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-self: center;
+}
+
+.button-github {
+  background-color: #DADEDF;
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin-top: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centers the button horizontally */
+}
+.button-github a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+.solution {
+  text-align: center;
+  padding: 20px;
+}
+
+.showcase1,
+.showcase2 {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+  -webkit-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+  -moz-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+}
+.showcase1 p,
+.showcase2 p {
+  margin: 0 13px;
+}
+
+.my-work {
+  display: grid;
+  grid-template-areas: "work" "showcase1" "showcase2";
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.work {
+  grid-area: work;
+}
+
+.showcase1 {
+  grid-area: showcase1;
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.showcase2 {
+  grid-area: showcase2;
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.wireframing div:nth-child(1) {
+  margin-right: 10px;
+}
+
+/* Separator line styles */
+.line {
+  margin: 20px auto;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 770px) {
+  .time, .wireframing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*.display.swap-content div {
+      margin-right: 60px;
+      margin-left: 0;
+  }*/
+  .mobile-mockup {
+    max-height: 400px;
+  }
+  .solution-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+  .my-work {
+    grid-template-areas: "work work" "showcase1 showcase2";
+  }
+  .showcase1,
+  .showcase2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .line {
+    margin: 40px auto;
+  }
+}
+.about,
+.skills-general,
+.skills,
+.education,
+.experience,
+.resume {
+  margin: 20px;
+}
+
+.about-img {
+  height: 300px;
+}
+
+.skills > div:nth-child(2) {
+  margin-top: 25px;
+}
+
+.education,
+.experience,
+.education > div:nth-child(2),
+.experience > div:nth-child(2) {
+  margin-top: 25px;
+}
+
+.experience {
+  margin-bottom: 50px;
+}
+
+.education > div:nth-child(3) {
+  margin-top: 35px;
+}
+
+/*BUTTON*/
+.resume {
+  display: block;
+  border: none;
+  background-color: #ffffff;
+}
+.resume a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span {
+  display: inline-block;
+  background-color: #8245c2;
+  color: #ffffff;
+  border-radius: 17px;
+  padding: 5px 15px;
+  max-width: max-content;
+  font-size: 0.833rem;
+  margin: 10px 10px 10px 0;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 500px) {
+  .skills-general,
+  .skills,
+  .education,
+  .experience {
+    padding: 25px 0 0 0;
+  }
+  .about-text {
+    overflow: auto;
+  }
+  .about-img {
+    float: left; /* You can also use "right" if you want the image on the right side */
+    margin: 0 17px 7px 0; /* Adjust margin as needed */
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .skills > div:nth-child(2) {
+    margin-top: 0;
+  }
+}
+:root {
+  /*base font size */
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "poppinsRegular";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "poppinsBold";
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+/* Apply outline to all elements 
+* {
+  @include outline;
+}*/
+/* Reset and default styles for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppinsRegular;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  word-spacing: 0.035em;
+}
+
+*:focus {
+  outline: 3px solid #8245c2;
+}
+
+/*active link */
+.underline {
+  border-bottom: 3px solid #8245c2;
+  border-radius: 2px;
+}
+
+/*heading*/
+.short-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.short-underline::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust based on your preference */
+  left: 0;
+  width: 50px;
+  height: 3px; /* Same as border-bottom width */
+  background-color: #DADEDF;
+  border-radius: 2px;
+}
+
+/* Body and HTML styles */
+html {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/*.small {
+  font-size: 0.833rem;
+}
+
+.smaller {
+  font-size: 0.694rem;
+}*/
+a:hover {
+  color: #8245c2;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.swap-content {
+  display: grid;
+  grid-template-areas: "swapimg" "swaptext";
+}
+
+.swap-img {
+  grid-area: swapimg;
+}
+
+.swap-text {
+  grid-area: swaptext;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 770px) {
+  .swap-content {
+    display: grid;
+    grid-template-areas: "swaptext swapimg" "swaptext swapimg";
+  }
+}/*# sourceMappingURL=style.css.map */

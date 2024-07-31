@@ -1,0 +1,195 @@
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 0px;
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 9px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb a {
+    font-size: 9px;
+  }
+
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Style the last li with the primary color */
+ul.breadcrumb li:last-child {
+    color: $primary-color; /* 
+}
+
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+  
+p {
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 2.3rem;
+    margin: 45px 0 7px 0;
+}
+
+.problem-statement,
+.design-process,
+.solution,
+.learned,
+.my-work {
+    @include center-content;
+}
+
+.display {
+    align-items: center;
+        justify-content: center;
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    img {
+        margin: 10px 0;
+    }
+}
+
+.solution-showcase {
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px; /* Adjust the gap between images if needed */
+}
+
+.mobile-mockup {
+    max-height: 350px;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-self: center;
+}
+
+.button-github {
+    @include button-primary;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+ul {
+    margin-left: 30px;
+}
+
+.solution {
+    text-align: center;
+    padding: 20px;
+}
+
+.showcase1,
+.showcase2 {
+    background-color: $white;
+    @include center-vh;
+    border-radius: 6px;
+    @include shadow;
+
+    p {
+        margin: 0 13px;
+    }
+}
+
+.my-work {
+    display: grid;
+    grid-template-areas:
+        "work"
+        "showcase1"
+        "showcase2";
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.work {
+    grid-area: work;
+}
+
+.showcase1 {
+    grid-area: showcase1;
+    @include grid-vertical;
+}
+
+.showcase2 {
+    grid-area: showcase2;
+    @include grid-vertical;
+}
+
+.wireframing div:nth-child(1){
+    margin-right: 10px;
+}
+
+/* Separator line styles */
+.line {
+    margin: 20px auto;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 770px) {
+    .time, .wireframing {
+        @include grid-2;
+    }
+
+
+    /*.display.swap-content div {
+        margin-right: 60px;
+        margin-left: 0;
+    }*/
+
+
+
+    .mobile-mockup {
+        max-height: 400px;
+    }
+
+    .solution-showcase {
+        @include grid-3;
+        grid-gap: 50px;
+    }
+
+    .my-work {
+        grid-template-areas:
+            "work work"
+            "showcase1 showcase2";
+    }
+
+    .showcase1,
+    .showcase2 {
+        @include grid-2;
+    }
+
+    .line {
+        margin: 40px auto;
+    }
+}

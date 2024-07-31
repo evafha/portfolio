@@ -1,0 +1,98 @@
+nav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    margin-top: 85px;
+    height: 100vh;
+    justify-content: center;
+    background-color: red; /* Menu background color */
+  }
+
+  a {
+    display: block;
+    color: #ffffff; /* Text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+
+.menu-logo {
+  float: left;
+
+  img {
+    max-height: 40px;
+  }
+}
+
+/* When active, display the ul list as a flex container */
+nav ul.active {
+  display: flex;
+}
+
+/* Styling for the hamburger icon */
+.hamburger-cross {
+  float: right;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-right: 13px;
+  pointer-events: auto;
+}
+
+/* Styling for the bars in the hamburger icon */
+.bar1,
+.bar2,
+.bar3 {
+  width: 28px;
+  height: 3.5px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.4s;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+ 
+/* Styling for the bars when the hamburger icon is clicked */
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 770px) {
+  /* Display the ul list as a horizontal row and align it to the right */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 10px;
+    height: auto; /* Reset height for larger screens */
+    background-color: white; /* Reset background color for larger screens */
+  }
+
+  /* Add margin to the left of each list item */
+  nav li {
+    margin-left: 20px;
+  }
+
+  /* Hide the hamburger icon on larger screens */
+  .hamburger-cross {
+    display: none;
+  }
+}

@@ -1,0 +1,86 @@
+/* Styles for container */
+.container {
+    @include grid-2; /* Apply grid with 2 columns */
+    @include grid-vertical; /* Arrange items vertically within the grid */
+}
+
+/* Styles for index cards */
+.index-card {
+    display: grid;
+    grid-gap: 45px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+
+.welcome {
+    /*height: 80vh;*/
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 auto;
+  max-width: 700px;
+
+  }
+
+  
+
+/* Styles for button */
+.button-project {
+    @include button-secondary;
+    margin-top: 25px;
+}
+
+.spacing {
+    margin: 55px;
+}
+
+.line {
+    @include line;
+}
+
+/* Styles for portfolio section heading */
+h2#portfolio {
+    margin: 0 0 40px 0;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        margin: 0; /*fjern?*/ /* Remove default margin */
+    }
+
+    /* Styles for spans within text */
+    span {
+        background-color: $white;
+        color: black;
+        margin: 18px 15px 4px 0;
+        /*border: 0.1px solid #DADEDF;*/
+
+        @include shadow;
+    }
+}
+
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 770px) {
+    .index-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spacing {
+        margin: 125px;
+    }
+}
+
+/* Media queries for even larger screens */
+@media only screen and (min-width: 1000px) {
+    .index-card.three-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

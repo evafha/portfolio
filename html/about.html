@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Skip to main content link for screen readers -->
+        <a href="#mainContent" class="skip-to-content">skip to main content</a>
+
+        <nav aria-label="Main Navigation">
+            <div class="hamburger-cross" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <a href="../index.html" class="menu-logo">
+                <img src="../assets/images/logo.png" alt="Logo">
+            </a>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <!--<li><a href="../index.html#projects">Other projects</a></li>-->
+                <li><a href="about.html" class="underline">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainContent"> <!-- skips to here -->
+
+        <div class="about">
+            <h1>About Me</h1>
+            <div class="about-text">
+                <img class="about-img" src="../assets/images/me3.png" alt="">
+
+                <div class="about-me">
+                    <p>I love traveling and meeting new people, which has given me valuable perspectives on working with
+                        different teams. This has strengthened my ability to collaborate effectively and be creative in
+                        various contexts.</p>
+
+                    <p>I thrive on working creatively with both digital design and physical prototypes. Turning ideas
+                        into reality is one of the things that motivates me the most. To further develop my knowledge, I
+                        have taken several courses in web design, which have expanded my skills. I am always looking for
+                        new experiences to build my portfolio and look forward to opportunities for collaboration.
+                        Please feel free to get in touch if you’d like to explore these opportunities together!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-general">
+            <h2>Design Skills</h2>
+            <div class="skills-devide">
+                <span>UX/UI</span>
+                <span>User Research</span>
+                <span>Prototyping</span>
+                <span>Storyboarding</span>
+                <span>Wireframing</span>
+                <span>Usability Testing</span>
+            </div>
+        </div>
+
+        <div class="skills">
+
+            <div>
+                <h2>Software</h2>
+                <div class="skills-devide">
+                    <span>Figma</span>
+                    <span>Visual Studio Code</span>
+                    <span>Miro</span>
+                </div>
+            </div>
+
+            <div>
+                <h2>Other</h2>
+                <div class="skills-devide">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2 class="underline">Education</h2>
+            <div>
+                <h3>Norwegian University of Science and Technology</h3>
+                <p>Bachelor of Interaction Design</p>
+                <p>Elective course focusing on accessibility, usability, and ethics</p>
+                <p>August 2022 - June 2025</p>
+            </div>
+
+            <div>
+                <h3>Norwegian University of Science and Technology</h3>
+                <p>Bachelor of Pedagogy</p>
+                <p>Contains one year specialization in international marketing as part of a breadth year</p>
+                <p>August 2020 -June 2022</p>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h2 class="underline">Experience</h2>
+            <div>
+                <h3>Myrsund Mekaniske AS</h3>
+                <p>Bachelor of Pedagogy</p>
+                <p>Contains one year specialization in international marketing as part of a breadth year</p>
+                <p>August 2020 -June 2022</p>
+            </div>
+        </div>
+
+        <!-- UNDERLINING -->
+        <button class="resume underline"><a href="#" download aria-label="Download the resume as a PDF file">Download My
+                full resume here</a></button>
+
+    </main>
+
+    <footer aria-label="Site Footer" id="contact">
+        <div class="footer top-footer">
+            <h2>Kontakt meg</h2>
+            <div>
+                <p><a href="mailto:evafhaugum@hotmail.com">evafhaugum@hotmail.com</a></p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/eva-fossen-haugum/" target="_blank">
+                    <img src="../assets/images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/evafha" target="_blank">
+                    <img src="../assets/images/github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer bottom-footer">
+
+            <!-- SCROLL TO TOP BUTTON -->
+            <div class="scroll">
+                <a href="#mainContent" aria-label="skip back to top">BACK TO TOP</a>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p class="copyright" tabindex="0">Copyright &#169; 2024 Eva Fossen Haugum</p>
+        </div>
+    </footer>
+
+    <script src="../js/nav.js" defer> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+// Define primary colors
+$primary-color: #8245c2;
+$secondary-color: #DADEDF;
+
+// Define basic colors
+$black: #000000;
+$white: #ffffff;
+
+// Define dark grey color
+$dark-grey: #999;
+
+// Define spacing
+$spacing: 2rem;
+
+// Define specific color for different courses
+$IDG2012-color: #006081;
+
+
+.solution.IDG2012 {
+    background-color: $IDG2012-color;
+}

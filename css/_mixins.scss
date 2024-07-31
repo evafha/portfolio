@@ -1,0 +1,86 @@
+// Mixin for centering a flex container horizontally and vertically
+@mixin center-div {
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin for centering content horizontally
+@mixin center-content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// Mixin for centering content vertically and horizontally
+@mixin center-vh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Mixin for creating a vertical grid layout
+@mixin grid-vertical {
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+// Mixin for styling a primary button
+@mixin button-primary {
+    background-color: $secondary-color;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: none;
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+// Mixin for styling a secondary button
+@mixin button-secondary {
+    display: block;
+    border: none;
+    background-color: $white;
+
+    a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+// Mixin for adding a horizontal line with a border color
+@mixin line {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+
+    &::after {
+        content: "";
+        display: block;
+        border-top: 1px solid $secondary-color;
+    }
+}
+
+// Mixin for creating a 2-column grid layout
+@mixin grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+// Mixin for creating a 3-column grid layout
+@mixin grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+// Mixin for adding a box shadow with specific parameters
+@mixin shadow {
+    box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+    -webkit-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+    -moz-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
+}

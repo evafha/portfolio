@@ -1,0 +1,79 @@
+.about,
+.skills-general,
+.skills,
+.education,
+.experience,
+.resume {
+    margin: 20px;
+}
+
+.about-img {
+    height: 300px; 
+}
+
+.skills > div:nth-child(2) {
+    margin-top: 25px;
+}
+
+.education,
+.experience,
+.education > div:nth-child(2),
+.experience > div:nth-child(2) {
+    margin-top: 25px;
+}
+
+.experience {
+    margin-bottom: 50px;
+}
+
+.education > div:nth-child(3) {
+    margin-top: 35px;
+}
+
+/*BUTTON*/
+.resume {
+    @include button-secondary;
+}
+
+span {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white;
+    border-radius: 17px;
+    padding: 5px 15px;
+    max-width: max-content;
+    font-size: 0.833rem;
+    margin: 10px 10px 10px 0;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 500px) {
+    .skills-general,
+    .skills,
+    .education,
+    .experience {
+        padding: 25px 0 0 0;
+    }
+
+    .about-text {
+        overflow: auto;
+    }
+    
+    .about-img {
+        float: left; /* You can also use "right" if you want the image on the right side */
+        margin: 0 17px 7px 0; /* Adjust margin as needed */
+       
+    }
+    
+    
+    
+
+    .skills {
+        @include grid-2;
+        grid-gap: 30px;
+    }
+
+    .skills > div:nth-child(2) {
+        margin-top: 0;
+    }
+}

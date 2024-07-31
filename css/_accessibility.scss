@@ -1,0 +1,12 @@
+/* Skip to content link for accessibility */
+.skip-to-content {
+    position: absolute;
+    top: -400px;
+    /* Position off-screen */
+  }
+  
+  .skip-to-content:focus {
+    position: relative;
+    top: 0;
+    /* Bring into the visible area when focused */
+  }
