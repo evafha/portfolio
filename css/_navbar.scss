@@ -1,7 +1,6 @@
 nav {
   overflow: hidden;
   background-color: white;
-  position: relative;
 
   ul {
     list-style-type: none;
@@ -11,19 +10,45 @@ nav {
     display: none;
     flex-direction: column;
     margin-top: 85px;
-    height: 100vh;
-    justify-content: center;
-    background-color: red; /* Menu background color */
   }
 
   a {
     display: block;
-    color: #ffffff; /* Text color */
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  /* Styling for when nav is active */
+  &.active {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    height: 100vh; 
+    overflow: hidden; 
+
+    ul {
+      display: flex;
+      padding-top: 20px;
+      
+    }
+  }
 }
+
+ul a.underline {
+  display: inline-block; /* Allows for better control over vertical positioning */
+margin-left: 38%;
+}
+
+
+
+/* To prevent scrolling of the body when the nav is active 
+body.nav-active,
+html.nav-active {
+  overflow: hidden;
+}*/
 
 .menu-logo {
   float: left;
@@ -31,11 +56,6 @@ nav {
   img {
     max-height: 40px;
   }
-}
-
-/* When active, display the ul list as a flex container */
-nav ul.active {
-  display: flex;
 }
 
 /* Styling for the hamburger icon */
@@ -60,7 +80,7 @@ nav ul.active {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 }
- 
+
 /* Styling for the bars when the hamburger icon is clicked */
 .change .bar1 {
   transform: translate(0, 8px) rotate(-45deg);
@@ -82,8 +102,6 @@ nav ul.active {
     flex-direction: row;
     float: right;
     margin-top: 10px;
-    height: auto; /* Reset height for larger screens */
-    background-color: white; /* Reset background color for larger screens */
   }
 
   /* Add margin to the left of each list item */

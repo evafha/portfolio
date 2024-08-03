@@ -4,12 +4,11 @@ function myFunction(x) {
   x.classList.toggle("change");
 
   // Get the navigation unordered list element
-  var navUl = document.querySelector('nav ul');
+  var navUl = document.querySelector('nav');
 
   // Toggle the 'active' class on the navigation unordered list to show/hide it
   navUl.classList.toggle('active');
 }
-
 
 
 

@@ -4,6 +4,7 @@
 nav {
   overflow: hidden;
   background-color: white;
+  /* Styling for when nav is active */
 }
 nav ul {
   list-style-type: none;
@@ -21,17 +22,34 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
 }
+nav.active {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+nav.active ul {
+  display: flex;
+  padding-top: 20px;
+}
 
+ul a.underline {
+  display: inline-block; /* Allows for better control over vertical positioning */
+  margin-left: 38%;
+}
+
+/* To prevent scrolling of the body when the nav is active 
+body.nav-active,
+html.nav-active {
+  overflow: hidden;
+}*/
 .menu-logo {
   float: left;
 }
 .menu-logo img {
   max-height: 40px;
-}
-
-/* When active, display the ul list as a flex container */
-nav ul.active {
-  display: flex;
 }
 
 /* Styling for the hamburger icon */
@@ -294,7 +312,7 @@ ul.breadcrumb li a {
 
 /* Style the last li with the primary color */
 ul.breadcrumb li:last-child {
-  color: #8245c2; /* Replace with your primary color */
+  color: #8245c2;
 }
 
 /* Add a color on mouse-over */
@@ -583,7 +601,7 @@ span {
 .short-underline::before {
   content: "";
   position: absolute;
-  bottom: -2px; /* Adjust based on your preference */
+  bottom: -3px;
   left: 0;
   width: 50px;
   height: 3px; /* Same as border-bottom width */
