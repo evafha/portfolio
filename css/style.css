@@ -29,15 +29,24 @@ nav.active {
   top: 0;
   height: 100vh;
   overflow: hidden;
+  animation: slideDown 0.4s ease-out;
 }
 nav.active ul {
   display: flex;
   padding-top: 20px;
+  text-align: center;
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 ul a.underline {
-  display: inline-block; /* Allows for better control over vertical positioning */
-  margin-left: 38%;
+  display: inline-block;
 }
 
 /* To prevent scrolling of the body when the nav is active 
@@ -164,6 +173,15 @@ html.nav-active {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+}
+.button-project a {
+  display: inline-flex;
+  align-items: center;
+}
+.button-project img {
+  width: 12px;
+  height: auto;
+  margin: 0 8px 0 2px;
 }
 
 .spacing {
@@ -505,6 +523,11 @@ ul {
   margin-top: 35px;
 }
 
+.cursiv {
+  font-style: italic;
+  font-size: 13px;
+}
+
 /*BUTTON*/
 .resume {
   display: block;
@@ -541,8 +564,8 @@ span {
     overflow: auto;
   }
   .about-img {
-    float: left; /* You can also use "right" if you want the image on the right side */
-    margin: 0 17px 7px 0; /* Adjust margin as needed */
+    float: left;
+    margin: 0 17px 7px 0;
   }
   .skills {
     display: grid;

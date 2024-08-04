@@ -15,7 +15,7 @@ document.write('            </a>');
 document.write('');
 document.write('            <ul>');
 document.write('                <li><a href="../index.html">Home</a></li>');
-document.write('                <li><a href="../index.html#portfolio">Portfolio</a></li>');
+document.write('                <li><a href="../index.html#portfolio" class="underline">Portfolio</a></li>');
 document.write('                <li><a href="../html/about.html">About Me</a></li>');
 document.write('                <li><a href="#contact">Contact</a></li>');
 document.write('            </ul>');

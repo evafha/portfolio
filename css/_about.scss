@@ -30,6 +30,11 @@
     margin-top: 35px;
 }
 
+.cursiv {
+    font-style: italic;
+    font-size: 13px;
+}
+
 /*BUTTON*/
 .resume {
     @include button-secondary;
@@ -60,12 +65,9 @@ span {
     }
     
     .about-img {
-        float: left; /* You can also use "right" if you want the image on the right side */
-        margin: 0 17px 7px 0; /* Adjust margin as needed */
-       
+        float: left; 
+        margin: 0 17px 7px 0; 
     }
-    
-    
     
 
     .skills {

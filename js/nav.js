@@ -10,5 +10,16 @@ function myFunction(x) {
   navUl.classList.toggle('active');
 }
 
+// Select all the menu links
+const menuLinks = document.querySelectorAll('nav ul li a');
 
-
+// Add click event listener to each menu link
+menuLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove the 'active' class from the navigation unordered list
+    document.querySelector('nav').classList.remove('active');
+    
+    // Remove the 'change' class from the menu icon
+    document.querySelector('.hamburger-cross').classList.remove('change');
+  });
+});

@@ -21,28 +21,36 @@ nav {
   }
 
   /* Styling for when nav is active */
+
   &.active {
     position: fixed;
     width: 100%;
     z-index: 99;
     top: 0;
-    height: 100vh; 
-    overflow: hidden; 
+    height: 100vh;
+    overflow: hidden;
+    animation: slideDown 0.4s ease-out;
 
     ul {
       display: flex;
       padding-top: 20px;
-      
+      text-align: center;
     }
   }
 }
 
-ul a.underline {
-  display: inline-block; /* Allows for better control over vertical positioning */
-margin-left: 38%;
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-
+ul a.underline {
+  display: inline-block;
+}
 
 /* To prevent scrolling of the body when the nav is active 
 body.nav-active,

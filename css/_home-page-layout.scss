@@ -12,7 +12,6 @@
     border-radius: 5px;
 }
 
-
 .welcome {
     /*height: 80vh;*/
     padding-top: 45px;
@@ -21,16 +20,24 @@
     justify-content: center;
 
     margin: 0 auto;
-  max-width: 700px;
-
-  }
-
-  
+    max-width: 700px;
+}
 
 /* Styles for button */
 .button-project {
     @include button-secondary;
     margin-top: 25px;
+
+    a {
+        display: inline-flex;
+        align-items: center; 
+    }
+
+    img {
+        width: 12px; 
+        height: auto; 
+        margin: 0 8px 0 2px ; 
+    }
 }
 
 .spacing {
@@ -65,7 +72,6 @@ h2#portfolio {
         @include shadow;
     }
 }
-
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
