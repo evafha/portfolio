@@ -1,6 +1,9 @@
 // Define primary colors
-$primary-color: #8245c2;
+$primary-color: #a095af;
 $secondary-color: #DADEDF;
+
+$primary-colo: #BCAFCE;
+$secondary-colo: #d8cfd0;
 
 // Define basic colors
 $black: #000000;
@@ -16,6 +19,13 @@ $spacing: 2rem;
 $IDG2012-color: #006081;
 
 
-.solution.IDG2012 {
+.solution.IDG2012, .header.IDG2012 {
     background-color: $IDG2012-color;
+  color: white;
 }
+
+.IDG2012 .short-underline::before {
+    background-color: $IDG2012-color;
+    color: $IDG2012-color;
+}
+

@@ -3,8 +3,11 @@
 /* file import */
 nav {
   overflow: hidden;
-  background-color: white;
+  padding: 30px;
   /* Styling for when nav is active */
+}
+nav li {
+  margin-top: 40px;
 }
 nav ul {
   list-style-type: none;
@@ -13,13 +16,12 @@ nav ul {
   overflow: hidden;
   display: none;
   flex-direction: column;
-  margin-top: 85px;
+  margin-top: 65px;
 }
 nav a {
   display: block;
-  color: #000000;
+  color: black;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 nav.active {
@@ -56,6 +58,7 @@ html.nav-active {
 }*/
 .menu-logo {
   float: left;
+  cursor: pointer;
 }
 .menu-logo img {
   max-height: 40px;
@@ -65,7 +68,6 @@ html.nav-active {
 .hamburger-cross {
   float: right;
   cursor: pointer;
-  margin-top: 16px;
   margin-right: 13px;
   pointer-events: auto;
 }
@@ -108,15 +110,22 @@ html.nav-active {
   }
   /* Add margin to the left of each list item */
   nav li {
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-top: 0;
   }
   /* Hide the hamburger icon on larger screens */
   .hamburger-cross {
     display: none;
   }
 }
-.solution.IDG2012 {
+.solution.IDG2012, .header.IDG2012 {
   background-color: #006081;
+  color: white;
+}
+
+.IDG2012 .short-underline::before {
+  background-color: #006081;
+  color: #006081;
 }
 
 /* Skip to content link for accessibility */
@@ -130,6 +139,11 @@ html.nav-active {
   position: relative;
   top: 0;
   /* Bring into the visible area when focused */
+}
+
+nav,
+.welcome {
+  background-color: white;
 }
 
 /* Styles for container */
@@ -152,13 +166,18 @@ html.nav-active {
 }
 
 .welcome {
-  /*height: 80vh;*/
-  padding-top: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 80vh;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.welcome-header {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 600px;
+  text-align: center;
 }
 
 /* Styles for button */
@@ -330,13 +349,29 @@ ul.breadcrumb li a {
 
 /* Style the last li with the primary color */
 ul.breadcrumb li:last-child {
-  color: #8245c2;
+  color: #DADEDF;
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #8245c2;
+  color: #DADEDF;
   text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 40px 20px 40px;
+  margin-bottom: 40px;
+}
+
+.header-text {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.header-text h1 {
+  margin-top: 60px;
 }
 
 p {
@@ -463,7 +498,8 @@ ul {
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
-  .time, .wireframing {
+  .time,
+  .wireframing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -543,7 +579,7 @@ ul {
 
 span {
   display: inline-block;
-  background-color: #8245c2;
+  background-color: #a095af;
   color: #ffffff;
   border-radius: 17px;
   padding: 5px 15px;
@@ -606,12 +642,12 @@ span {
 }
 
 *:focus {
-  outline: 3px solid #8245c2;
+  outline: 3px solid #a095af;
 }
 
 /*active link */
 .underline {
-  border-bottom: 3px solid #8245c2;
+  border-bottom: 3px solid #a095af;
   border-radius: 2px;
 }
 
@@ -628,7 +664,7 @@ span {
   left: 0;
   width: 50px;
   height: 3px; /* Same as border-bottom width */
-  background-color: #DADEDF;
+  background-color: #a095af;
   border-radius: 2px;
 }
 
@@ -701,7 +737,7 @@ p {
   font-size: 0.694rem;
 }*/
 a:hover {
-  color: #8245c2;
+  color: #a095af;
   opacity: 0.8;
   font-weight: bold;
 }

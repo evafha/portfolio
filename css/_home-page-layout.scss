@@ -1,3 +1,8 @@
+nav,
+.welcome {
+    background-color: white;
+}
+
 /* Styles for container */
 .container {
     @include grid-2; /* Apply grid with 2 columns */
@@ -13,14 +18,20 @@
 }
 
 .welcome {
-    /*height: 80vh;*/
-    padding-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    height: 80vh;
+    padding: 0 40px;
+
+    margin-bottom: 40px;
+}
+
+.welcome-header {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 600px;
+    text-align: center;
 }
 
 /* Styles for button */
@@ -30,13 +41,13 @@
 
     a {
         display: inline-flex;
-        align-items: center; 
+        align-items: center;
     }
 
     img {
-        width: 12px; 
-        height: auto; 
-        margin: 0 8px 0 2px ; 
+        width: 12px;
+        height: auto;
+        margin: 0 8px 0 2px;
     }
 }
 

@@ -23,3 +23,4 @@ menuLinks.forEach(link => {
     document.querySelector('.hamburger-cross').classList.remove('change');
   });
 });
+

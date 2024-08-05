@@ -3,48 +3,61 @@ ul.breadcrumb {
     padding: 10px 0px;
     list-style: none;
     margin-left: 0;
-  }
-  
-  /* Display list items side by side */
-  ul.breadcrumb li {
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
     display: inline;
     font-size: 9px;
-  }
-  
-  /* Add a slash symbol (/) before/behind each list item */
-  ul.breadcrumb li+li:before {
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
-  }
-  
-  ul.breadcrumb a {
-    font-size: 9px;
-  }
-
-  /* Add a color to all links inside the list */
-  ul.breadcrumb li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  /* Style the last li with the primary color */
-ul.breadcrumb li:last-child {
-    color: $primary-color;  
 }
 
-  /* Add a color on mouse-over */
-  ul.breadcrumb li a:hover {
-    color: $primary-color;
+ul.breadcrumb a {
+    font-size: 9px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Style the last li with the primary color */
+ul.breadcrumb li:last-child {
+    color: $secondary-color;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: $secondary-color;
     text-decoration: underline;
-  }
+}
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+padding: 40px 40px 20px 40px;
 
+margin-bottom: 40px;
+}
 
+.header-text {
+    margin: 0 auto;
+    max-width: 800px;
 
+    h1 {
+        margin-top: 60px;
+    }
+}
 
-
-  
 p {
     margin-top: 7px;
     margin-bottom: 15px;
@@ -65,7 +78,7 @@ p {
 
 .display {
     align-items: center;
-        justify-content: center;
+    justify-content: center;
 
     h2 {
         margin-top: 10px;
@@ -78,10 +91,10 @@ p {
 
 .solution-showcase {
     display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap: 10px; /* Adjust the gap between images if needed */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between images if needed */
 }
 
 .mobile-mockup {
@@ -94,7 +107,7 @@ gap: 10px; /* Adjust the gap between images if needed */
 
 .button-github {
     @include button-primary;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +159,7 @@ ul {
     @include grid-vertical;
 }
 
-.wireframing div:nth-child(1){
+.wireframing div:nth-child(1) {
     margin-right: 10px;
 }
 
@@ -157,17 +170,15 @@ ul {
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
-    .time, .wireframing {
+    .time,
+    .wireframing {
         @include grid-2;
     }
-
 
     /*.display.swap-content div {
         margin-right: 60px;
         margin-left: 0;
     }*/
-
-
 
     .mobile-mockup {
         max-height: 400px;
