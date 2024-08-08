@@ -51,6 +51,21 @@ nav,
     }
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.button {
+    flex: 1 1 auto; /* allows buttons to grow and shrink */
+    max-width: 45%; 
+    min-width: 100px; 
+}
+
+
+
 .spacing {
     margin: 55px;
 }
@@ -88,11 +103,14 @@ h2#portfolio {
 @media only screen and (min-width: 770px) {
     .index-card {
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 0; /* Removes the gap between rows */
+        
     }
 
     .spacing {
         margin: 125px;
     }
+
 }
 
 /* Media queries for even larger screens */
@@ -101,3 +119,26 @@ h2#portfolio {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
+ 
+
+/* Make the body background fixed 
+body {
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(160,149,175,1) 50%, rgba(255,255,255,1) 100%);
+background-attachment: fixed;
+}
+
+/* Floating project cards 
+.index-card {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}*/
+

@@ -16,9 +16,22 @@ $dark-grey: #999;
 $spacing: 2rem;
 
 // Define specific color for different courses
+$myrsund-color: #ac2022;
 $IDG2012-color: #006081;
+$IDG2000-color: #14733D;
 
+// Myrsund Mekaniske
+.solution.myrsund, .header.myrsund {
+  background-color: $myrsund-color;
+color: white;
+}
 
+.myrsund .short-underline::before {
+  background-color: $myrsund-color;
+  color: $myrsund-color;
+}
+
+// IDG2012
 .solution.IDG2012, .header.IDG2012 {
     background-color: $IDG2012-color;
   color: white;
@@ -28,4 +41,18 @@ $IDG2012-color: #006081;
     background-color: $IDG2012-color;
     color: $IDG2012-color;
 }
+
+// IDG2000
+.solution.IDG2000, .header.IDG2000 {
+  background-color: $IDG2000-color;
+color: white;
+}
+
+.IDG2000 .short-underline::before {
+  background-color: $IDG2000-color;
+  color: $IDG2000-color;
+}
+
+
+
 

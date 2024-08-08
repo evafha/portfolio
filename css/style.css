@@ -31,12 +31,12 @@ nav.active {
   top: 0;
   height: 100vh;
   overflow: hidden;
-  animation: slideDown 0.4s ease-out;
 }
 nav.active ul {
   display: flex;
   padding-top: 20px;
   text-align: center;
+  animation: slideDown 0.5s ease-out;
 }
 
 @keyframes slideDown {
@@ -118,6 +118,16 @@ html.nav-active {
     display: none;
   }
 }
+.solution.myrsund, .header.myrsund {
+  background-color: #ac2022;
+  color: white;
+}
+
+.myrsund .short-underline::before {
+  background-color: #ac2022;
+  color: #ac2022;
+}
+
 .solution.IDG2012, .header.IDG2012 {
   background-color: #006081;
   color: white;
@@ -126,6 +136,16 @@ html.nav-active {
 .IDG2012 .short-underline::before {
   background-color: #006081;
   color: #006081;
+}
+
+.solution.IDG2000, .header.IDG2000 {
+  background-color: #14733D;
+  color: white;
+}
+
+.IDG2000 .short-underline::before {
+  background-color: #14733D;
+  color: #14733D;
 }
 
 /* Skip to content link for accessibility */
@@ -203,6 +223,19 @@ nav,
   margin: 0 8px 0 2px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  flex: 1 1 auto; /* allows buttons to grow and shrink */
+  max-width: 45%;
+  min-width: 100px;
+}
+
 .spacing {
   margin: 55px;
 }
@@ -246,6 +279,7 @@ h2#portfolio {
 @media only screen and (min-width: 770px) {
   .index-card {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 0; /* Removes the gap between rows */
   }
   .spacing {
     margin: 125px;
@@ -257,6 +291,22 @@ h2#portfolio {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* Make the body background fixed 
+body {
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(160,149,175,1) 50%, rgba(255,255,255,1) 100%);
+background-attachment: fixed;
+}
+
+/* Floating project cards 
+.index-card {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}*/
 footer {
   text-align: center;
   display: flex;
@@ -273,7 +323,7 @@ footer img:hover {
   opacity: 0.5;
 }
 footer div {
-  margin: 10px;
+  padding: 10px;
 }
 footer p {
   margin: 0;
@@ -358,10 +408,12 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+p {
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 40px 40px 20px 40px;
   margin-bottom: 40px;
 }
@@ -372,11 +424,6 @@ ul.breadcrumb li a:hover {
 }
 .header-text h1 {
   margin-top: 60px;
-}
-
-p {
-  margin-top: 7px;
-  margin-bottom: 15px;
 }
 
 .title {
@@ -392,6 +439,10 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.solution, video {
+  border-radius: 5px;
 }
 
 .display {
@@ -423,7 +474,7 @@ p {
 
 .button-github {
   background-color: #DADEDF;
-  padding: 15px 25px;
+  padding: 13px 23px;
   border-radius: 5px;
   margin-top: 40px;
   border: none;
@@ -459,7 +510,7 @@ ul {
 }
 .showcase1 p,
 .showcase2 p {
-  margin: 0 13px;
+  margin: 10px 13px;
 }
 
 .my-work {
@@ -467,6 +518,13 @@ ul {
   grid-template-areas: "work" "showcase1" "showcase2";
   gap: 30px;
   margin-bottom: 50px;
+}
+.my-work a {
+  text-decoration: none;
+  color: black;
+}
+.my-work a:hover {
+  text-decoration: underline;
 }
 
 .work {
@@ -642,30 +700,7 @@ span {
 }
 
 *:focus {
-  outline: 3px solid #a095af;
-}
-
-/*active link */
-.underline {
-  border-bottom: 3px solid #a095af;
-  border-radius: 2px;
-}
-
-/*heading*/
-.short-underline {
-  position: relative;
-  display: inline-block;
-}
-
-.short-underline::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 50px;
-  height: 3px; /* Same as border-bottom width */
-  background-color: #a095af;
-  border-radius: 2px;
+  outline: 2px solid #a095af;
 }
 
 /* Body and HTML styles */
@@ -682,7 +717,7 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 0 40px;
 }
 
@@ -694,6 +729,19 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensures it doesn't exceed the container's width */
+  display: block; /* Removes any default inline spacing */
+}
+
+iframe {
+  max-width: 100%;
+  min-height: 450px;
+  width: 100%;
 }
 
 header {
@@ -719,6 +767,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+  padding-top: 15px;
 }
 
 h4 {
@@ -740,6 +789,29 @@ a:hover {
   color: #a095af;
   opacity: 0.8;
   font-weight: bold;
+}
+
+/*active link */
+.underline {
+  border-bottom: 3px solid #a095af;
+  border-radius: 2px;
+}
+
+/*heading*/
+.short-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.short-underline::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 50px;
+  height: 3px; /* Same as border-bottom width */
+  background-color: #a095af;
+  border-radius: 2px;
 }
 
 .swap-content {

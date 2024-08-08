@@ -39,14 +39,16 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-padding: 40px 40px 20px 40px;
 
-margin-bottom: 40px;
+p {
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.header {
+    padding: 40px 40px 20px 40px;
+
+    margin-bottom: 40px;
 }
 
 .header-text {
@@ -56,11 +58,6 @@ margin-bottom: 40px;
     h1 {
         margin-top: 60px;
     }
-}
-
-p {
-    margin-top: 7px;
-    margin-bottom: 15px;
 }
 
 .title {
@@ -74,6 +71,10 @@ p {
 .learned,
 .my-work {
     @include center-content;
+}
+
+.solution, video {
+border-radius: 5px;
 }
 
 .display {
@@ -131,8 +132,9 @@ ul {
     @include shadow;
 
     p {
-        margin: 0 13px;
+        margin: 10px 13px;
     }
+
 }
 
 .my-work {
@@ -143,6 +145,15 @@ ul {
         "showcase2";
     gap: 30px;
     margin-bottom: 50px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
 }
 
 .work {
@@ -167,6 +178,11 @@ ul {
 .line {
     margin: 20px auto;
 }
+
+
+
+
+
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {

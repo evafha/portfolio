@@ -51,7 +51,99 @@
 }
 
 *:focus {
-  outline: 3px solid $primary-color;
+  outline: 2px solid $primary-color;
+}
+
+
+/* Body and HTML styles */
+html {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 40px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensures it doesn't exceed the container's width */
+  display: block; /* Removes any default inline spacing */
+}
+
+iframe {
+  max-width: 100%;
+  min-height: 450px;
+  width: 100%;
+}
+
+
+header {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-top: 15px;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/*.small {
+  font-size: 0.833rem;
+}
+
+.smaller {
+  font-size: 0.694rem;
+}*/
+
+a:hover {
+  color: $primary-color;
+  opacity: 0.8;
+  font-weight: bold;
 }
 
 /*active link */
@@ -78,80 +170,7 @@
 }
 
 
-/* Body and HTML styles */
-html {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0;
-  scroll-behavior: smooth;
-}
 
-body {
-  font-size: 16px;
-}
-
-main {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 40px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header {
-  margin: 0 auto;
-  max-width: 1280px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 1.6rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-  padding-top: 20px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
-/*.small {
-  font-size: 0.833rem;
-}
-
-.smaller {
-  font-size: 0.694rem;
-}*/
-
-a:hover {
-  color: $primary-color;
-  opacity: 0.8;
-  font-weight: bold;
-}
 
 .swap-content {
   display: grid;
