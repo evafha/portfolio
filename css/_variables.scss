@@ -1,8 +1,8 @@
 // Define primary colors
 $primary-color: #a095af;
-$secondary-color: #DADEDF;
+$secondary-color: #dadedf;
 
-$primary-colo: #BCAFCE;
+$primary-colo: #bcafce;
 $secondary-colo: #d8cfd0;
 
 // Define basic colors
@@ -18,12 +18,19 @@ $spacing: 2rem;
 // Define specific color for different courses
 $myrsund-color: #ac2022;
 $IDG2012-color: #006081;
-$IDG2000-color: #14733D;
+$IDG2000-color: #14733d;
+$IDG3750-color: #d4af37;
+
+$IDG3009-color: #0076DA;
+$IDG2200-color: #F7F4ED;
+$IDG3002-color: #3F9475;
+$IDG3006-color: #4FAD74;
 
 // Myrsund Mekaniske
-.solution.myrsund, .header.myrsund {
+.solution.myrsund,
+.header.myrsund {
   background-color: $myrsund-color;
-color: white;
+  color: white;
 }
 
 .myrsund .short-underline::before {
@@ -32,20 +39,22 @@ color: white;
 }
 
 // IDG2012
-.solution.IDG2012, .header.IDG2012 {
-    background-color: $IDG2012-color;
+.solution.IDG2012,
+.header.IDG2012 {
+  background-color: $IDG2012-color;
   color: white;
 }
 
 .IDG2012 .short-underline::before {
-    background-color: $IDG2012-color;
-    color: $IDG2012-color;
+  background-color: $IDG2012-color;
+  color: $IDG2012-color;
 }
 
 // IDG2000
-.solution.IDG2000, .header.IDG2000 {
+.solution.IDG2000,
+.header.IDG2000 {
   background-color: $IDG2000-color;
-color: white;
+  color: white;
 }
 
 .IDG2000 .short-underline::before {
@@ -53,6 +62,68 @@ color: white;
   color: $IDG2000-color;
 }
 
+// IDG3750
+.solution.IDG3750,
+.header.IDG3750 {
+  background-color: $IDG3750-color;
+  color: black;
+}
+
+.IDG3750 .short-underline::before {
+  background-color: $IDG3750-color;
+  color: $IDG3750-color;
+}
 
 
 
+
+// IDG3009
+.solution.IDG3009,
+.header.IDG3009 {
+  background-color: $IDG3009-color;
+  color: white;
+}
+
+.IDG3009 .short-underline::before {
+  background-color: $IDG3009-color;
+  color: $IDG3009-color;
+}
+
+
+
+
+// IDG2200
+.solution.IDG2200,
+.header.IDG2200 {
+  background-color: $IDG2200-color;
+  color: black;
+}
+
+.IDG2200 .short-underline::before {
+  background-color: $IDG2200-color;
+  color: $IDG2200-color;
+}
+
+// IDG3002
+.solution.IDG3002,
+.header.IDG3002 {
+  background-color: $IDG3002-color;
+  color: white;
+}
+
+.IDG3002 .short-underline::before {
+  background-color: $IDG3002-color;
+  color: $IDG3002-color;
+}
+
+// IDG3006
+.solution.IDG3006,
+.header.IDG3006 {
+  background-color: $IDG3006-color;
+  color: black;
+}
+
+.IDG3006 .short-underline::before {
+  background-color: $IDG3006-color;
+  color: $IDG3006-color;
+}

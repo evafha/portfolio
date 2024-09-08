@@ -31,8 +31,14 @@ nav,
 .welcome-header {
     margin: 0 auto;
     max-width: 600px;
-    text-align: center;
+    text-align: left;
 }
+
+span.welcome-design, span.welcome-design2 {
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
 
 /* Styles for button */
 .button-project {

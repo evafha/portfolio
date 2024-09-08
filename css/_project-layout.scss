@@ -170,6 +170,10 @@ ul {
     @include grid-vertical;
 }
 
+.wireframing {
+    grid-gap: 25px;
+}
+
 .wireframing div:nth-child(1) {
     margin-right: 10px;
 }
