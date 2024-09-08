@@ -703,7 +703,7 @@ ul {
   font-weight: bold;
 }
 
-span.skills-design {
+.span, .skills-design {
   display: inline-block;
   background-color: #a095af;
   color: #ffffff;

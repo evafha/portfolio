@@ -40,7 +40,7 @@
     @include button-secondary;
 }
 
-span.skills-design {
+.span, .skills-design {
     display: inline-block;
     background-color: $primary-color;
     color: $white;
