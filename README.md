@@ -13,7 +13,6 @@ I have experience with the following technologies:
 - **HTML5 & CSS3**: For creating responsive and accessible web designs.
 - **JavaScript**: For adding interactivity and dynamic functionality.
 - **Sass**: For writing maintainable and scalable styles.
-- **[Other Technologies]**: [Brief Description of Additional Technologies]
 
 ## How to Navigate
 
@@ -29,6 +28,6 @@ To view my portfolio, navigate through the following sections:
 If you’d like to get in touch with me, you can reach me at:
 
 - **Email**: evafhaugum@hotmail.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
+- **LinkedIn**: [Eva Fossen Haugum](https://www.linkedin.com/in/eva-fossen-haugum/)
+- **GitHub**: [Evafha] (https://github.com/evafha)
 
