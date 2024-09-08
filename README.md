@@ -29,5 +29,5 @@ If you’d like to get in touch with me, you can reach me at:
 
 - **Email**: evafhaugum@hotmail.com
 - **LinkedIn**: [Eva Fossen Haugum](https://www.linkedin.com/in/eva-fossen-haugum/)
-- **GitHub**: [Evafha] (https://github.com/evafha)
+- **GitHub**: [Evafha](https://github.com/evafha)
 
