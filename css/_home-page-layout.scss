@@ -34,43 +34,78 @@ nav,
     text-align: left;
 }
 
-span.welcome-design, span.welcome-design2 {
+span.welcome-design,
+span.welcome-design2 {
     font-weight: lighter;
     font-size: 1.4rem;
 }
 
+span.welcome-design2 {
+    color: $primary-color;
+}
 
 /* Styles for button */
 .button-project {
-    @include button-secondary;
-    margin-top: 25px;
+    display: block;
+    border-radius: 5px;
+    border-width: 0.2px;
+    border-color: $primary-color;
+
+    background-color: $white;
+    margin-top: 35px;
+    padding: 5px 10px;
 
     a {
         display: inline-flex;
         align-items: center;
+        font-size: 12px;
+
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
     img {
-        width: 12px;
+        width: 10px;
         height: auto;
         margin: 0 8px 0 2px;
     }
 }
 
+.button-project:hover {
+    background-color: $primary-color;
+    border: none;
+
+    a {
+        color: white;
+        font-weight: lighter;
+    }
+
+    img {
+        filter: grayscale(0%) invert(100%);
+    }
+}
+
+.year {
+    font-size: 13px;
+    font-style: italic;
+    color: $primary-color;
+    margin-top: -5px;
+    margin-bottom: 4px;
+}
+
 .button-container {
     display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-    gap: 10px; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .button {
     flex: 1 1 auto; /* allows buttons to grow and shrink */
-    max-width: 45%; 
-    min-width: 100px; 
+    max-width: 45%;
+    min-width: 100px;
 }
-
-
 
 .spacing {
     margin: 55px;
@@ -89,35 +124,18 @@ h2#portfolio {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    p {
-        margin: 0; /*fjern?*/ /* Remove default margin */
-    }
-
-    /* Styles for spans within text */
-    span {
-        background-color: $white;
-        color: black;
-        margin: 18px 15px 4px 0;
-        /*border: 0.1px solid #DADEDF;*/
-
-        @include shadow;
-    }
 }
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
     .index-card {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 0; /* Removes the gap between rows */
-            grid-gap: 45px;
-
+        grid-gap: 45px;
     }
 
     .spacing {
         margin: 125px;
     }
-
 }
 
 /* Media queries for even larger screens */
@@ -127,17 +145,12 @@ h2#portfolio {
     }
 }
 
-
-
-
- 
-
 /* Make the body background fixed 
 body {
     background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(160,149,175,1) 50%, rgba(255,255,255,1) 100%);
 background-attachment: fixed;
-}
+}*/
 
 /* Floating project cards 
 .index-card {
@@ -148,4 +161,3 @@ background-attachment: fixed;
     margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }*/
-

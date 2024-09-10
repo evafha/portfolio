@@ -258,32 +258,58 @@ nav,
   text-align: left;
 }
 
-span.welcome-design, span.welcome-design2 {
+span.welcome-design,
+span.welcome-design2 {
   font-weight: lighter;
   font-size: 1.4rem;
+}
+
+span.welcome-design2 {
+  color: #816E81;
 }
 
 /* Styles for button */
 .button-project {
   display: block;
-  border: none;
+  border-radius: 5px;
+  border-width: 0.2px;
+  border-color: #816E81;
   background-color: #ffffff;
-  margin-top: 25px;
-}
-.button-project a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
+  margin-top: 35px;
+  padding: 5px 10px;
 }
 .button-project a {
   display: inline-flex;
   align-items: center;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .button-project img {
-  width: 12px;
+  width: 10px;
   height: auto;
   margin: 0 8px 0 2px;
+}
+
+.button-project:hover {
+  background-color: #816E81;
+  border: none;
+}
+.button-project:hover a {
+  color: white;
+  font-weight: lighter;
+}
+.button-project:hover img {
+  filter: grayscale(0%) invert(100%);
+}
+
+.year {
+  font-size: 13px;
+  font-style: italic;
+  color: #816E81;
+  margin-top: -5px;
+  margin-bottom: 4px;
 }
 
 .button-container {
@@ -323,26 +349,12 @@ h2#portfolio {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* Styles for spans within text */
-}
-.text p {
-  margin: 0; /*fjern?*/ /* Remove default margin */
-}
-.text span {
-  background-color: #ffffff;
-  color: black;
-  margin: 18px 15px 4px 0;
-  /*border: 0.1px solid #DADEDF;*/
-  box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
-  -webkit-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
-  -moz-box-shadow: 3px 1px 11px 2px rgba(115, 115, 115, 0.2);
 }
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
   .index-card {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 0; /* Removes the gap between rows */
     grid-gap: 45px;
   }
   .spacing {
@@ -360,8 +372,7 @@ body {
     background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(160,149,175,1) 50%, rgba(255,255,255,1) 100%);
 background-attachment: fixed;
-}
-
+}*/
 /* Floating project cards 
 .index-card {
     position: relative;
@@ -705,7 +716,7 @@ ul {
 
 .span, .skills-design {
   display: inline-block;
-  background-color: #a095af;
+  background-color: #816E81;
   color: #ffffff;
   border-radius: 17px;
   padding: 5px 15px;
@@ -768,7 +779,7 @@ ul {
 }
 
 *:focus {
-  outline: 2px solid #a095af;
+  outline: 2px solid #816E81;
 }
 
 /* Body and HTML styles */
@@ -854,14 +865,14 @@ p {
   font-size: 0.694rem;
 }*/
 a:hover {
-  color: #a095af;
+  color: #816E81;
   opacity: 0.8;
   font-weight: bold;
 }
 
 /*active link */
 .underline {
-  border-bottom: 3px solid #a095af;
+  border-bottom: 3px solid #816E81;
   border-radius: 2px;
 }
 
@@ -878,7 +889,7 @@ a:hover {
   left: 0;
   width: 50px;
   height: 3px; /* Same as border-bottom width */
-  background-color: #a095af;
+  background-color: #816E81;
   border-radius: 2px;
 }
 
@@ -900,5 +911,6 @@ a:hover {
   .swap-content {
     display: grid;
     grid-template-areas: "swaptext swapimg" "swaptext swapimg";
+    row-gap: 0; /* Removes the gap between rows */
   }
 }/*# sourceMappingURL=style.css.map */

@@ -194,5 +194,6 @@ a:hover {
     grid-template-areas:
       "swaptext swapimg"
       "swaptext swapimg";
+      row-gap: 0; /* Removes the gap between rows */
   }
 }
