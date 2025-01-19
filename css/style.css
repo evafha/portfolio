@@ -99,6 +99,15 @@ html.nav-active {
   transform: translate(0, -8px) rotate(45deg);
 }
 
+#lang-toggle {
+  background-color: #816E81;
+  border-radius: 25px;
+  padding: 4px 12px;
+  border: none;
+  color: white;
+  font-size: smaller;
+}
+
 /* Media query for larger screens */
 @media only screen and (min-width: 770px) {
   /* Display the ul list as a horizontal row and align it to the right */
