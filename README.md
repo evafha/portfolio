@@ -3,8 +3,7 @@
 Welcome to my portfolio! This repository showcases a selection of my work in interaction design. Here, you'll find examples of my projects, skills, and the approaches I take to problem-solving and design.
 
 ## About Me
-
-I am Eva, an ambitious Interaction Design student based in Gjøvik, currently delving into the fascinating world of web development with a keen eye for universal design and inclusivity.
+I am Eva. My vision as an interaction designer is to create solutions that make a difference, from idea to finished product. Take a look at my projects to gain insight into how I work to solve challenges!
 
 ## Technologies
 
