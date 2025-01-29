@@ -2,11 +2,11 @@
  const projects = [
     { imgSrc: '../assets/images/myrsund/myrsund-front.png', description: 'Myrsund Mekaniske AS', link: 'myrsund-mekaniske.html' },
 
-    { imgSrc: '../assets/images/IDG2012/IDG2012-front.png', description: 'Web Accessibility, Usability and Ethics', link: 'web-accessibility.html' },
+    { imgSrc: '../assets/images/IDG2012/IDG2012-front.png', description: 'Webtilgjengelighet, Brukervennlighet og Etikk', link: 'web-accessibility.html' },
 
-    { imgSrc: '../assets/images/IDG2000/IDG2000-front.png', description: 'Design in Healthcare', link: 'design-in-healthcare.html' },
+    { imgSrc: '../assets/images/IDG2000/IDG2000-front.png', description: 'Design i Helsetjenester', link: 'design-in-healthcare.html' },
 
-    { imgSrc: '../assets/images/IDG3750/IDG3750-front.png', description: 'Tangible and Sensorial Interaction Design', link: 'tangible-design.html' },
+    { imgSrc: '../assets/images/IDG3750/IDG3750-front.png', description: 'Sensorisk og berøringsvennlig interaksjonsdesign', link: 'tangible-design.html' },
 
 
     // Add more projects as needed

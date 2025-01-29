@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
 
@@ -15,56 +15,187 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
 <body>
 
-    <!-- WELCOME/INTRODUCTION MESSAGE -->
-    <div id="mainContent" class="welcome"><!-- skips to here -->
+    <header>
+        <!-- Skip to main content link for screen readers -->
+        <a href="#mainContent" class="skip-to-content">skip to main content</a>
 
+        <nav aria-label="Main Navigation">
+            <div class="hamburger-cross" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <a href="index.html" class="menu-logo">
+                <img src="assets/images/logo.png" alt="logo efh">
+            </a>
+
+            <ul>
+                <li><a href="index.html" class="underline">Hjem</a></li>
+                <li><a href="#portfolio">Portefølje</a></li>
+
+                <li><a href="html/about.html">Om meg</a></li>
+                <li><a href="#contact">Kontakt</a></li>             
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Godt design handler ikke bare om estetikk – det handler om mennesker.  -->
+    <div id="mainContent" class="welcome"><!-- skips to here -->
+        <div class="welcome-header">
+            <h1>Hei, jeg er Eva <span class="welcome-design"> —   Min visjon som <span class="welcome-design2">interaksjonsdesigner</span> er å skape løsninger som gjør en forskjell, fra idé til ferdig produkt. Ta en titt på prosjektene mine for å få innsikt i hvordan jeg jobber med å løse utfordringer!</span></h1>
+
+        </div>
+    </div>
 
     <main>
 
+        <h2 id="portfolio" class="short-underline">Portefølje</h2>
 
-        <div class="container">
-            <section class="page page1">
-             <p>Jeg er Eva</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione dolore voluptatem pariatur eos. Amet explicabo minima nihil voluptas cumque totam rerum delectus impedit illum facilis ut, fuga velit sapiente?</p>
-            </section>
-            <section class="page page2">
-                
-                <div class="grid-container">
-                    <div class="grid-item frame">1</div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">4</div>
+        <div>
+            <!-- FIRST PROJECT-->
+            <div class="index-card">
+                <img src="assets/images/myrsund/myrsund-front.png" alt="Your Image" class="image">
+
+                <div class="text">
+                    <h3>Myrsund Mekaniske</h3>
+
+                    <p class="year">Selvstendig prosjekt 2024</p>
+
+                    <p>Design og utvikling av en nettside for en nyoppstartet bedrift innen industrimekanikk</p>
+
+                    <div>
+                        <button class="button-project "><a href="html/myrsund-mekaniske.html"> <img
+                                    src="assets/images/arrow.png" alt=""> Se prosjekt</a></button>
+                    </div>
+
                 </div>
-            </section>
+            </div>
 
-            <section class="page page4">
-                
-                <h1>about me</h1>
-            </section>
-        
-            <section class="page page3">
-                <div class="top-text">EVA FOSSEN HAUGUM</div>
-                <div class="middle-text">evafhaugum@hotmail.com</div>
-                <div class="bottom-left-text">LINKEDIN</div>
-                <div class="bottom-right-text">GITHUB</div>
-                
-            </section>
-            
-            
-            
-        </div>
-        
-        <div class="gradient-effect"></div>
-       
+
+            <div class="spacing">
+                <div class="line"></div>
+            </div>
+
+            <!-- SECOND PROJECT -->
+            <div class="index-card swap-content">
+                <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+
+                <div class="text swap-text">
+                    <div>
+                        <h3>Webtilgjengelighet, Brukervennlighet og Etikk</h3>
+
+                        <p class="year">Akademisk 2023</p>
+
+                        <p>Et webkodekurs om tilgjengelighet for personer med funksjonsnedsettelser</p>
+
+
+                        <button class="button-project"><a href="html/web-accessibility.html"> <img
+                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="spacing">
+                <div class="line"></div>
+            </div>
+
+            <!-- THIRD PROJECT -->
+            <div class="index-card">
+                <img src="assets/images/IDG2000/IDG2000-front.png" alt="Your Image" class="image">
+
+                <div class="text">
+                    <h3>Design i Helsetjenester</h3>
+
+                    <p class="year">Akademisk 2023</p>
+
+                    <p>Hvilke nye løsninger kan bidra til mer aldersvennlig transport i Gjøvik?</p>
+
+                    <div>
+                        <button class="button-project"><a href="html/design-in-healthcare.html"> <img
+                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="spacing">
+                <div class="line"></div>
+            </div>
+
+            <!-- FOURTH PROJECT -->
+            <div class="index-card swap-content">
+                <img src="assets/images/IDG3750/IDG3750-front.png" alt="Your Image" class="image">
+
+                <div class="text swap-text">
+                    <div>
+                        <h3>Sensorisk og berøringsvennlig interaksjonsdesign</h3>
+
+                        <p class="year">Akademisk 2024</p>
+
+                        <p>Laget et brettspill som fremmer sosial interaksjon og læring</p>
+
+                        <button class="button-project"><a href="html/tangible-design.html"> <img
+                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacing">
+            </div>
+
+            <!-- OTHER PROJECT-->
+            <!--<h2 id="projects">Other Projects</h2>
+            <div class="index-card three-grid">
+
+                <a href="html/service-design.html">
+                    <div>
+                        <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+
+                        <div class="text">
+                            <p class="course">Service Design</p>
+                            <p class="year">Spring 2024</p>
+                        </div>
+                        
+                    </div>
+                </a>
+
+                <a href="html/web-accessibility.html">
+                    <div>
+
+                        <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+
+
+                        <div class="text">
+                            <p class="course">Web Coding</p>
+                            <p class="year">Høsten 2022</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="html/web-accessibility.html">
+                    <div>
+
+                        <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+
+
+                        <div class="text">
+                            <p class="course">Web Coding</p>
+                            <p class="year">Høsten 2022</p>
+                        </div>
+                    </div>
+                </a>
+            </div>-->
+
     </main>
 
     <footer aria-label="Site Footer" id="contact">
         <div class="footer top-footer">
-            <h2>Contact me</h2>
+            <h2>Kontakt meg</h2>
             <div>
                 <p><a href="mailto:evafhaugum@hotmail.com">evafhaugum@hotmail.com</a></p>
             </div>
@@ -83,7 +214,7 @@
 
             <!-- SCROLL TO TOP BUTTON -->
             <div class="scroll">
-                <a href="#mainContent" aria-label="skip back to top">BACK TO TOP</a>
+                <a href="#mainContent" aria-label="skip back to top">TILBAKE TIL TOPPEN</a>
             </div>
 
             <!-- COPYRIGHT -->
@@ -93,7 +224,6 @@
     </footer>
 
     <script src="js/nav.js" defer> </script>
-    <script src="js/footer.js" defer> </script>
 
 </body>
 

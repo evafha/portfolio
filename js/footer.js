@@ -1,44 +1,29 @@
-let currentPage = 0;
-const pages = document.querySelectorAll('.page');
-const totalPages = pages.length;
-
-window.addEventListener('wheel', (e) => {
-    if (e.deltaY > 0) {
-        // Scroll Down
-        currentPage = Math.min(currentPage + 1, totalPages - 1);
-    } else {
-        // Scroll Up
-        currentPage = Math.max(currentPage - 1, 0);
-    }
-
-    // Scroll to the selected page
-    pages[currentPage].scrollIntoView({ behavior: 'smooth' });
-});
-
-
-const gradientEffect = document.querySelector('.gradient-effect');
-
-let mouseX = 0;
-let mouseY = 0;
-
-// Track mouse position
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-
-// Update the gradient position with a delay using requestAnimationFrame
-function moveLight() {
-  const delay = 0.9; // Change the delay value to increase or decrease the lag
-  const diffX = mouseX - gradientEffect.offsetLeft;
-  const diffY = mouseY - gradientEffect.offsetTop;
-
-  // Update position with a delay (smooth effect)
-  gradientEffect.style.left = `${gradientEffect.offsetLeft + diffX * delay}px`;
-  gradientEffect.style.top = `${gradientEffect.offsetTop + diffY * delay}px`;
-
-  requestAnimationFrame(moveLight); // Keep animating
-}
-
-// Start animating the light movement
-moveLight();
+document.write('<footer aria-label="Nettstedets bunntekst" id="contact">');
+document.write('        <div class="footer top-footer">');
+document.write('            <h2>Kontakt meg</h2>');
+document.write('            <div>');
+document.write('                <p><a href="mailto:evafhaugum@hotmail.com">evafhaugum@hotmail.com</a></p>');
+document.write('            </div>');
+document.write('');
+document.write('            <div class="social-media">');
+document.write('                <a href="https://www.linkedin.com/in/eva-fossen-haugum/" target="_blank">');
+document.write('                    <img src="../assets/images/linkedin.png" alt="LinkedIn">');
+document.write('                </a>');
+document.write('                <a href="https://github.com/evafha" target="_blank">');
+document.write('                    <img src="../assets/images/github.png" alt="GitHub">');
+document.write('                </a>');
+document.write('            </div>');
+document.write('        </div>');
+document.write('');
+document.write('        <div class="footer bottom-footer">');
+document.write('');
+document.write('            <!-- SCROLL TO TOP BUTTON -->');
+document.write('            <div class="scroll">');
+document.write('                <a href="#mainContent" aria-label="hopp tilbake til toppen">TILBAKE TIL TOPPEN</a>');
+document.write('            </div>');
+document.write('');
+document.write('            <!-- COPYRIGHT -->');
+document.write('            <p class="copyright" tabindex="0">Copyright &#169; 2024 Eva Fossen Haugum</p>');
+document.write('        </div>');
+document.write('');
+document.write('    </footer>');

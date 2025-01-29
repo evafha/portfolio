@@ -14,10 +14,10 @@ document.write('                <img src="../assets/images/logo.png" alt="Logo">
 document.write('            </a>');
 document.write('');
 document.write('            <ul>');
-document.write('                <li><a href="../index.html">Home</a></li>');
-document.write('                <li><a href="../index.html#portfolio" class="underline">Portfolio</a></li>');
-document.write('                <li><a href="../html/about.html">About Me</a></li>');
-document.write('                <li><a href="#contact">Contact</a></li>');
+document.write('                <li><a href="../index.html">Hjem</a></li>');
+document.write('                <li><a href="../index.html#portfolio" class="underline">Portefølje</a></li>');
+document.write('                <li><a href="../html/about.html">Om meg</a></li>');
+document.write('                <li><a href="#contact">Kontakt</a></li>');
 
 document.write('            </ul>');
 document.write('        </nav>');

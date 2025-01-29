@@ -1,8 +1,14 @@
 /*https://www.freecodecamp.org/news/how-to-use-sass-with-css/*/
 
 /* file import */
-
+@import "_navbar";
+@import "_mixins";
+@import "_variables";
+@import "_accessibility";
 @import "_home-page-layout";
+@import "_footer";
+@import "_project-layout";
+@import "_about";
 
 :root {
   /*base font size */
@@ -44,7 +50,28 @@
   word-spacing: 0.035em;
 }
 
+*:focus {
+  outline: 2px solid $primary-color;
+}
 
+
+/* Body and HTML styles */
+html {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 40px;
+}
 
 
 img {
@@ -103,4 +130,73 @@ h4 {
 
 p {
   font-size: 1rem;
+}
+
+/*.small {
+  font-size: 0.833rem;
+}
+
+.smaller {
+  font-size: 0.694rem;
+}*/
+
+a:hover {
+  color: $primary-color;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+/*active link */
+.underline {
+  border-bottom: 3px solid $primary-color;
+  border-radius: 2px;
+}
+
+/*heading*/
+.short-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.short-underline::before {
+  content: '';
+  position: absolute;
+  bottom: -3px; 
+  left: 0;
+  width: 50px;
+  height: 3px; /* Same as border-bottom width */
+  background-color: $primary-color;
+  border-radius: 2px;
+}
+
+.design-process h2 {
+  font-size: 1.7rem;
+}
+
+
+
+.swap-content {
+  display: grid;
+  grid-template-areas:
+    "swapimg"
+    "swaptext";
+}
+
+.swap-img {
+  grid-area: swapimg;
+}
+
+.swap-text {
+  grid-area: swaptext;
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 770px) {
+  .swap-content {
+    display: grid;
+    grid-template-areas:
+      "swaptext swapimg"
+      "swaptext swapimg";
+      row-gap: 0; /* Removes the gap between rows */
+  }
 }
