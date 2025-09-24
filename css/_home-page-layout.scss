@@ -30,13 +30,55 @@ nav,
 
 .welcome-header {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 750px;
     text-align: left;
 }
 
-.welcome-header h1 {
-    font-size: 1rem;
+
+/*NYTT*/
+
+.ny-hero {
+    display: flex;
+    justify-content: flex-start; /* Høyrestiller bildene */
+
+    margin-top: 40px; /* Luft under bildet */
 }
+
+.ny-hero img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.welcome-header h1 {
+    font-weight: 600;
+
+    margin-top: 20px;
+}
+
+.welcome-header h1 {
+    margin-bottom: 20px; /* Luft under overskriften */
+}
+
+.welcome-header p {
+    margin-bottom: 15px; /* Luft mellom paragrafene */
+}
+
+
+.welcome-header {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+
+
 
 span.welcome-design,
 span.welcome-design2 {

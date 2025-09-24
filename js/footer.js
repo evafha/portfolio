@@ -23,7 +23,7 @@ document.write('                <a href="#mainContent" aria-label="hopp tilbake 
 document.write('            </div>');
 document.write('');
 document.write('            <!-- COPYRIGHT -->');
-document.write('            <p class="copyright" tabindex="0">Copyright &#169; 2024 Eva Fossen Haugum</p>');
+document.write('            <p class="copyright" tabindex="0">Copyright &#169; 2025 Eva Fossen Haugum</p>');
 document.write('        </div>');
 document.write('');
 document.write('    </footer>');

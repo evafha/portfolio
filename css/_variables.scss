@@ -20,6 +20,7 @@ $myrsund-color: #ac2022;
 $IDG2012-color: #006081;
 $IDG2000-color: #14733d;
 $IDG3750-color: #d4af37;
+$norkart-color: #15804E;
 
 $IDG3009-color: #0076DA;
 $IDG2200-color: #F7F4ED;
@@ -74,6 +75,18 @@ $IDG3006-color: #4FAD74;
   color: $IDG3750-color;
 }
 
+
+// Norkart
+.solution.norkart,
+.header.norkart {
+  background-color: $norkart-color;
+  color: white;
+}
+
+.norkart .short-underline::before {
+  background-color: $norkart-color;
+  color: $norkart-color;
+}
 
 
 

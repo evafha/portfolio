@@ -25,12 +25,17 @@
   src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
 }
 
+@font-face {
+  font-family: "poppinsMedium";
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
 
 
-/* Apply outline to all elements 
+/* Apply outline to all elements
 * {
-  @include outline;
+  outline: 1px solid red; 
 }*/
+
 
 
 
@@ -67,6 +72,7 @@ body {
   font-size: 16px;
 }
 
+
 main {
   margin: 0 auto;
   max-width: 900px;
@@ -78,7 +84,7 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 4px;
   display: block;
   margin-left: auto;
   margin-right: auto;
