@@ -4,7 +4,6 @@
 nav {
   overflow: hidden;
   padding: 30px;
-  /* Styling for when nav is active */
 }
 nav li {
   margin-top: 40px;
@@ -23,6 +22,9 @@ nav a {
   color: black;
   text-align: center;
   text-decoration: none;
+}
+nav {
+  /* Styling for when nav is active */
 }
 nav.active {
   position: fixed;
@@ -617,14 +619,16 @@ p {
   border-radius: 5px;
   margin-top: 40px;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto; /* Centers the button horizontally */
 }
 .button-github a {
   color: #000000;
   text-decoration: none;
+}
+.button-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centers the button horizontally */
 }
 
 ul {
