@@ -1,4 +1,17 @@
- // Array of project data with internal links
+ const image = document.getElementById('zoomImage');
+
+image.addEventListener('click', () => {
+  if (!document.fullscreenElement) {
+    image.requestFullscreen().catch(err => {
+      console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+});
+
+
+// Array of project data with internal links
  const projects = [
     { imgSrc: '../assets/images/myrsund/myrsund-front.png', description: 'Myrsund Mekaniske AS', link: 'myrsund-mekaniske.html' },
 
