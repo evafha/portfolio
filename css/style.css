@@ -559,9 +559,14 @@ p {
   margin-bottom: 40px;
 }
 
+.header-max {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header-text {
   margin: 0 auto;
-  max-width: 800px;
 }
 .header-text h1 {
   margin-top: 60px;
@@ -570,6 +575,21 @@ p {
 .title {
   font-size: 2.3rem;
   margin: 45px 0 7px 0;
+}
+
+.tools-icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: max-content;
+  padding-left: 0;
+}
+
+.tools-icon img {
+  height: 32px;
+  width: auto;
+  object-fit: fill;
+  display: block;
 }
 
 .problem-statement,
@@ -703,15 +723,14 @@ ul {
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
-  .time,
+  .time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .wireframing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  /*.display.swap-content div {
-      margin-right: 60px;
-      margin-left: 0;
-  }*/
   .mobile-mockup {
     max-height: 400px;
   }
@@ -827,12 +846,20 @@ ul {
   src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 @font-face {
-  font-family: "poppinsBold";
-  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-family: "poppinsLight";
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf");
 }
 @font-face {
   font-family: "poppinsMedium";
   src: url("../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "interLight";
+  src: url("../assets/fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+  font-family: "playfairRegular";
+  src: url("../assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 /* Apply outline to all elements
 * {
@@ -843,11 +870,9 @@ ul {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: poppinsRegular;
+  font-family: interLight;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
-  word-spacing: 0.035em;
 }
 
 *:focus {
@@ -864,6 +889,7 @@ html {
 
 body {
   font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 main {
@@ -908,16 +934,18 @@ h4 {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  font-family: playfairRegular;
+  word-spacing: 0.04em;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding-top: 15px;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 15px;
 }
 
@@ -944,7 +972,7 @@ a:hover {
 
 /*active link */
 .underline {
-  border-bottom: 3px solid #816E81;
+  border-bottom: 4px solid #816E81;
   border-radius: 2px;
 }
 
@@ -952,17 +980,28 @@ a:hover {
 .short-underline {
   position: relative;
   display: inline-block;
+  /* Sørger for at bakgrunnen bak teksten er hvit om nødvendig */
+  background-color: white;
 }
 
 .short-underline::before {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -6px; /* Plassering under teksten */
   left: 0;
-  width: 50px;
-  height: 3px; /* Same as border-bottom width */
+  width: 70px; /* Lengden du hadde fra før */
+  height: 7px; /* Litt tykkere for at pensel-effekten skal syns */
+  /* Her bruker vi variabelen din */
   background-color: #816E81;
-  border-radius: 2px;
+  /* Denne masken lager pensel-formen */
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,10 C20,5 40,15 60,8 C80,2 90,12 100,7 L100,15 C85,18 70,10 50,15 C30,20 10,12 0,16 Z" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,10 C20,5 40,15 60,8 C80,2 90,12 100,7 L100,15 C85,18 70,10 50,15 C30,20 10,12 0,16 Z" fill="black"/></svg>');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  /* Litt rotasjon for å fjerne det "stive" preget */
+  transform: rotate(1.1deg);
 }
 
 .design-process h2 {

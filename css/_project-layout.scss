@@ -40,6 +40,8 @@ ul.breadcrumb li a:hover {
 }
 
 
+
+
 p {
     margin-top: 7px;
     margin-bottom: 15px;
@@ -51,9 +53,16 @@ p {
     margin-bottom: 40px;
 }
 
+.header-max {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
 .header-text {
     margin: 0 auto;
-    max-width: 800px;
 
     h1 {
         margin-top: 60px;
@@ -64,6 +73,21 @@ p {
     font-size: 2.3rem;
     margin: 45px 0 7px 0;
 }
+
+.tools-icon {
+   display: flex;
+    justify-content: flex-start; 
+    gap: 20px;
+    width: max-content; 
+    padding-left: 0;   
+}
+
+.tools-icon img {
+   height: 32px; 
+    width: auto;
+    object-fit: fill;
+    display: block;
+    }    
 
 .problem-statement,
 .design-process,
@@ -190,15 +214,13 @@ ul {
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
-    .time,
+    .time {
+        @include grid-3;
+    }
+
     .wireframing {
         @include grid-2;
     }
-
-    /*.display.swap-content div {
-        margin-right: 60px;
-        margin-left: 0;
-    }*/
 
     .mobile-mockup {
         max-height: 400px;
