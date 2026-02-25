@@ -27,6 +27,33 @@ $IDG2200-color: #F7F4ED;
 $IDG3002-color: #3F9475;
 $IDG3006-color: #4FAD74;
 
+$luna-color: #485F45;
+$saltpepper-color: #231A26;
+
+// Luna
+.solution.luna,
+.header.luna {
+  background-color: $luna-color;
+  color: white;
+}
+
+.luna .short-underline::before {
+  background-color: $luna-color;
+  color: $luna-color;
+}
+
+// Salt & Pepper
+.solution.saltpepper,
+.header.saltpepper {
+  background-color: $saltpepper-color;
+  color: white;
+}
+
+.saltpepper .short-underline::before {
+  background-color: $saltpepper-color;
+  color: $saltpepper-color;
+}
+
 // Myrsund Mekaniske
 .solution.myrsund,
 .header.myrsund {

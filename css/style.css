@@ -129,6 +129,28 @@ html.nav-active {
     display: none;
   }
 }
+.solution.luna,
+.header.luna {
+  background-color: #485F45;
+  color: white;
+}
+
+.luna .short-underline::before {
+  background-color: #485F45;
+  color: #485F45;
+}
+
+.solution.saltpepper,
+.header.saltpepper {
+  background-color: #231A26;
+  color: white;
+}
+
+.saltpepper .short-underline::before {
+  background-color: #231A26;
+  color: #231A26;
+}
+
 .solution.myrsund,
 .header.myrsund {
   background-color: #ac2022;

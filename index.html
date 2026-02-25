@@ -37,11 +37,10 @@
                 <li><a href="#portfolio">Portefølje</a></li>
 
                 <li><a href="html/about.html">Om meg</a></li>
-                <li><a href="#contact">Kontakt</a></li>             
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-
 
     <!-- Godt design handler ikke bare om estetikk – det handler om mennesker.  -->
     <div id="mainContent" class="welcome"><!-- skips to here -->
@@ -52,22 +51,27 @@
             <h1>Interaksjonsdesigner</h1>
 
             <!--<p>Basert i Gjøvik</p>-->
+            <p>evafossenhaugum.no</p>
+            <p>evafh.no</p>
+            <p>fossenhaugum.no</p>
 
-            <p>Min visjon som interaksjonsdesigner er å skape løsninger som gjør en forskjell, fra idé til ferdig produkt. Ta en titt på prosjektene mine for å få innsikt i hvordan jeg jobber med å løse utfordringer!</p>
+            <p>Min visjon som interaksjonsdesigner er å skape løsninger som gjør en forskjell, fra idé til ferdig
+                produkt. Ta en titt på prosjektene mine for å få innsikt i hvordan jeg jobber med å løse utfordringer!
+            </p>
 
             <!--<h1>Interaction design student, based in Gjøvik <span class="welcome-design"> —   Min visjon som <span class="welcome-design2">interaksjonsdesigner</span> er å skape løsninger som gjør en forskjell, fra idé til ferdig produkt. Ta en titt på prosjektene mine for å få innsikt i hvordan jeg jobber med å løse utfordringer!</span></h1>-->
 
             <div class="ny-hero">
-                    <div class="social-media">
-                        <a href="https://www.linkedin.com/in/eva-fossen-haugum/" target="_blank">
-                            <img src="assets/images/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <a href="https://github.com/evafha" target="_blank">
-                            <img src="assets/images/github.png" alt="GitHub">
-                        </a>
-                    </div>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/eva-fossen-haugum/" target="_blank">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/evafha" target="_blank">
+                        <img src="assets/images/github.png" alt="GitHub">
+                    </a>
                 </div>
-            
+            </div>
+
         </div>
     </div>
 
@@ -77,45 +81,29 @@
 
         <div>
 
-            <!-- FIRST PROJECT-->
-            <div class="index-card">
-                <img src="assets/images/norkart/norkart-front.png" alt="Your Image" class="image">
+             <!-- FIRST PROJECT-->
+            <prosjekt-kort 
+            bilde="assets/images/norkart/norkart-front.png"
+                alt="Mockup av varslingssenteret for Norkart vist på en laptop-skjerm" tittel="Norkart Sommer"
+                aar="Internship 2025" 
+                info="Jobbet i tverrfaglig team som utviklet et varslingssenter"
+                lenke="html/norkart-sommer.html">
+            </prosjekt-kort>
 
-                <div class="text">
-                    <h3>Norkart Sommer</h3>
-
-                    <p class="year">Internship 2025</p>
-
-                    <p>Jobbet i tverrfaglig team som utviklet et varslingssenter.</p>
-
-                    <div>
-                        <button class="button-project "><a href="html/norkart-sommer.html">Se prosjekt</a></button>
-                    </div>
-
-                </div>
-            </div>
-
-              <div class="spacing">
+            <div class="spacing">
                 <div class="line"></div>
             </div>
 
             <!-- SECOND PROJECT-->
-            <div class="index-card swap-content">
-                <img src="assets/images/norkart/norkart-front.png" alt="Your Image" class="image">
-
-                <div class="text swap-text">
-                    <h3>Luna</h3>
-
-                    <p class="year">Selvstendig prosjekt 2025</p>
-
-                    <p>Jobbet i tverrfaglig team som utviklet et varslingssenter.</p>
-
-                    <div>
-                        <button class="button-project "><a href="html/norkart-sommer.html">Se prosjekt</a></button>
-                    </div>
-
-                </div>
-            </div>
+           <prosjekt-kort 
+    swap="true"
+    bilde="assets/images/luna/luna-front.png"
+    tittel="Luna"
+    aar="Selvstendig prosjekt 2025"
+    info="Design og utvikling av en nettside for en nyoppstartet restaurant"
+    lenke="html/luna.html">
+</prosjekt-kort>
+            
 
 
             <div class="spacing">
@@ -123,114 +111,62 @@
             </div>
 
             <!-- THIRD PROJECT -->
-            <div class="index-card">
-                <img src="assets/images/IDG2000/IDG2000-front.png" alt="Your Image" class="image">
+           <prosjekt-kort 
+    bilde="assets/images/IDG2000/IDG2000-front.png"
+    alt="Bilde som representerer prosjektet om aldersvennlig transport i Gjøvik"
+    tittel="Design i Helsetjenester"
+    aar="Akademisk 2023"
+    info="Hvilke nye løsninger kan bidra til mer aldersvennlig transport i Gjøvik?"
+    lenke="html/design-in-healthcare.html">
+</prosjekt-kort>
 
-                <div class="text">
-                    <h3>Design i Helsetjenester</h3>
-
-                    <p class="year">Akademisk 2023</p>
-
-                    <p>Hvilke nye løsninger kan bidra til mer aldersvennlig transport i Gjøvik?</p>
-
-                    <div>
-                        <button class="button-project"><a href="html/design-in-healthcare.html"> <img
-                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
-                    </div>
-
-                </div>
-            </div>
-            
 
             <div class="spacing">
                 <div class="line"></div>
             </div>
 
             <!-- FOURTH PROJECT -->
-            <div class="index-card swap-content">
-                <img src="assets/images/IDG2012/IDG2012-front.png" alt="Your Image" class="image">
+           <prosjekt-kort 
+    swap="true"
+    bilde="assets/images/IDG2012/IDG2012-front.png"
+    alt="Illustrasjon for kurs om webtilgjengelighet og etikk"
+    tittel="Webtilgjengelighet, Brukervennlighet og Etikk"
+    aar="Akademisk 2023"
+    info="Et webkodekurs om tilgjengelighet for personer med funksjonsnedsettelser"
+    lenke="html/web-accessibility.html">
+</prosjekt-kort>
 
-                <div class="text swap-text">
-                    <div>
-                        <h3>Webtilgjengelighet, Brukervennlighet og Etikk</h3>
-
-                        <p class="year">Akademisk 2023</p>
-
-                        <p>Et webkodekurs om tilgjengelighet for personer med funksjonsnedsettelser</p>
-
-
-                        <button class="button-project"><a href="html/web-accessibility.html"> <img
-                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
-                    </div>
-                </div>
-            </div>
-            
 
             <div class="spacing">
                 <div class="line"></div>
             </div>
 
             <!-- FIFTH PROJECT -->
- <div class="index-card">
-                <img src="assets/images/IDG3750/IDG3750-front.png" alt="Your Image" class="image">
+          <prosjekt-kort 
+    bilde="assets/images/saltpepper/salt&pepper-front.png"
+    alt="Skjermbilde av den nye nettsiden til Salt & Pepper restaurant i Gjøvik"
+    tittel="Salt & Pepper Gjøvik"
+    aar="Selvstendig prosjekt 2026"
+    info="Redesign og utvikling av en nettside for en lokal restaurant i Gjøvik"
+    lenke="html/saltpepper.html">
+</prosjekt-kort>
 
-                <div class="text">
-                    <div>
-                        <h3>Sensorisk og berøringsvennlig interaksjonsdesign</h3>
 
-                        <p class="year">Akademisk 2024</p>
-
-                        <p>Laget et brettspill som fremmer sosial interaksjon og læring</p>
-
-                        <button class="button-project"><a href="html/tangible-design.html"> <img
-                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
-                    </div>
-                </div>
-            </div>
-            
 
             <div class="spacing">
                 <div class="line"></div>
             </div>
 
-               <!-- SIX PROJECT -->
-            <div class="index-card swap-content">
-                <img src="assets/images/myrsund/myrsund-front.png" alt="Your Image" class="image">
-
-                <div class="text swap-text">
-                    <h3>Myrsund Mekaniske</h3>
-
-                    <p class="year">Selvstendig prosjekt 2024</p>
-
-                    <p>Design og utvikling av en nettside for en nyoppstartet bedrift innen industrimekanikk</p>
-
-                    <div>
-                        <button class="button-project "><a href="html/myrsund-mekaniske.html"> <img
-                                    src="assets/images/arrow.png" alt=""> Se prosjekt</a></button>
-                    </div>
-
-                </div>
-            </div>
-            
-
-
-            
-            <!--<div class="index-card swap-content">
-                <img src="assets/images/IDG3750/IDG3750-front.png" alt="Your Image" class="image">
-
-                <div class="text swap-text">
-                    <div>
-                        <h3>Sensorisk og berøringsvennlig interaksjonsdesign</h3>
-
-                        <p class="year">Akademisk 2024</p>
-
-                        <p>Laget et brettspill som fremmer sosial interaksjon og læring</p>
-
-                        <button class="button-project"><a href="html/tangible-design.html"> <img
-                                    src="assets/images/arrow.png" alt="">Se prosjekt</a></button>
-                    </div>
-                </div>
-            </div>-->
+            <!-- SIX PROJECT -->
+        <prosjekt-kort 
+    swap="true"
+    bilde="assets/images/IDG3750/IDG3750-front.png"
+    alt="Bilde av et fysisk brettspill utviklet for sosial interaksjon"
+    tittel="Sensorisk og berøringsvennlig interaksjonsdesign"
+    aar="Akademisk 2024"
+    info="Laget et brettspill som fremmer sosial interaksjon og læring"
+    lenke="html/tangible-design.html">
+</prosjekt-kort>
 
             <div class="spacing">
             </div>
@@ -305,12 +241,14 @@
             </div>
 
             <!-- COPYRIGHT -->
-            <p class="copyright" tabindex="0">Copyright &#169; 2024 Eva Fossen Haugum</p>
+            <p class="copyright" tabindex="0">Copyright &#169; 2026 Eva Fossen Haugum</p>
         </div>
 
     </footer>
 
     <script src="js/nav.js" defer> </script>
+
+    <script src="js/prosjektKort.js" defer></script>
 
 </body>
 
