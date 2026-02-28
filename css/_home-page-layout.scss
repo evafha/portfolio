@@ -121,7 +121,7 @@ span.welcome-design2 {
 
 
 .year {
-    font-size: 13px;
+    font-size: 14px;
     font-style: italic;
     color: $primary-color;
     margin-top: -5px;
@@ -165,6 +165,7 @@ h2#portfolio {
     .index-card {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 45px;
+        align-items: center;
     }
 
     .spacing {

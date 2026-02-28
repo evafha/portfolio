@@ -70,12 +70,14 @@
 @mixin grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 // Mixin for creating a 3-column grid layout
 @mixin grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
 }
 
 // Mixin for adding a box shadow with specific parameters

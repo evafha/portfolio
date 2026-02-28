@@ -1,4 +1,38 @@
-/* --- KOMPONENT 1: PROSJEKT INFO --- */
+/* --- KOMPONENT 1: PROSJEKT HEADER --- */
+class ProsjektHeader extends HTMLElement {
+    connectedCallback() {
+        const prosjektKlasse = this.getAttribute('prosjekt-klasse') || '';
+        const tittel = this.getAttribute('tittel') || 'Prosjektnavn';
+        const beskrivelse = this.getAttribute('beskrivelse') || '';
+        const bildeSrc = this.getAttribute('bilde-src') || '';
+        const bildeAlt = this.getAttribute('bilde-alt') || '';
+        const portefoljeLink = this.getAttribute('link') || '../index.html#portfolio';
+
+        this.innerHTML = `
+            <div class="header ${prosjektKlasse}">
+                <div class="header-max">
+                    <ul class="breadcrumb">
+                        <li><a href="${portefoljeLink}">Portefølje</a></li>
+                        <li>${tittel}</li>
+                    </ul>
+                    <div class="index-card">
+                        <div class="header-text">
+                            <h1>${tittel}</h1>
+                            <p>${beskrivelse}</p>
+                        </div>
+                        <img class="header-img" src="${bildeSrc}" alt="${bildeAlt}">
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+
+customElements.define('prosjekt-header', ProsjektHeader);
+
+
+
+/* --- KOMPONENT 2: PROSJEKT INFO --- */
 class ProsjektInfo extends HTMLElement {
   connectedCallback() {
     const overskrift = this.getAttribute('overskrift') || 'Prosjektnavn';
@@ -45,7 +79,7 @@ customElements.define('prosjekt-info', ProsjektInfo);
 
 
 
-/* --- IKKE KOMPONENT 2: SE MER ARBEID  --- */
+/* --- IKKE KOMPONENT 3: SE MER ARBEID  --- */
 const myWorkHTML = `
 <div class="my-work">
     <h4>Se mer av arbeidet mitt</h4>

@@ -7,8 +7,9 @@
     margin: 20px;
 }
 
+
 .about-img {
-    height: 300px; 
+    height: 70%; 
 }
 
 .skills > div:nth-child(2) {
@@ -44,11 +45,11 @@
     display: inline-block;
     background-color: $primary-color;
     color: $white;
-    border-radius: 17px;
+    border-radius: 12px;
     padding: 5px 15px;
     max-width: max-content;
     font-size: 0.833rem;
-    margin: 10px 10px 10px 0;
+    margin: 6px 6px 6px 0;
 }
 
 /* Media queries for larger screens */
@@ -61,12 +62,11 @@
     }
 
     .about-text {
-        overflow: auto;
+        @include grid-2;
     }
     
     .about-img {
         float: left; 
-        margin: 0 17px 7px 0; 
     }
     
 
