@@ -93,7 +93,7 @@ span.welcome-design2 {
     border-radius: 4px;
     border: 0.2px solid $primary-color;
     background-color: $white;
-    margin-top: 20px;
+    margin-top: 16px;
     padding: 5px 10px;
     
     /* Tekst-styling */
@@ -158,13 +158,17 @@ h2#portfolio {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    h3 {
+        padding-top: 0;
+    }
 }
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
     .index-card {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 45px;
+        grid-gap: 50px;
         align-items: center;
     }
 

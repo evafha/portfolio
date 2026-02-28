@@ -7,9 +7,8 @@
     margin: 20px;
 }
 
-
 .about-img {
-    height: 70%; 
+    height: 300px;
 }
 
 .skills > div:nth-child(2) {
@@ -41,7 +40,8 @@
     @include button-secondary;
 }
 
-.span, .skills-design {
+.span,
+.skills-design {
     display: inline-block;
     background-color: $primary-color;
     color: $white;
@@ -53,7 +53,7 @@
 }
 
 /* Media queries for larger screens */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
     .skills-general,
     .skills,
     .education,
@@ -62,13 +62,19 @@
     }
 
     .about-text {
-        @include grid-2;
+        display: grid !important; /* !important for å sjekke om noe annet overstyrer */
+        grid-template-columns: auto 1fr;
+        align-items: center; /* Vertikal sentrering */
+        justify-content: start; /* Horisontal sentrering til venstre */
+        gap: 60px;
     }
-    
+
     .about-img {
-        float: left; 
+        max-height: 100%;
+        width: auto;
+        object-fit: contain;
+        justify-self: start;
     }
-    
 
     .skills {
         @include grid-2;
