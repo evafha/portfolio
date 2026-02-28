@@ -50,32 +50,25 @@ nav,
 }
 
 
-.welcome-header h1 {
-    font-weight: 600;
-
-    margin-top: 20px;
-}
-
-.welcome-header h1 {
-    margin-bottom: 20px; /* Luft under overskriften */
-}
-
-.welcome-header p {
-    margin-bottom: 15px; /* Luft mellom paragrafene */
-}
-
-
 .welcome-header {
     animation: fadeIn 1.5s ease-in-out;
+
+ h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ p {
+    margin-bottom: 15px;
+ }
+    
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
-
-
 
 
 
@@ -92,45 +85,40 @@ span.welcome-design2 {
 
 /* Styles for button */
 .button-project {
-    display: block;
-    border-radius: 5px;
-    border-width: 0.2px;
-    border-color: $primary-color;
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px; 
 
+    /* Knappe-styling */
+    border-radius: 4px;
+    border: 0.2px solid $primary-color;
     background-color: $white;
-    margin-top: 35px;
+    margin-top: 20px;
     padding: 5px 10px;
-
-    a {
-        display: inline-flex;
-        align-items: center;
-        font-size: 12px;
-
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+    
+    /* Tekst-styling */
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
 
     img {
-        width: 10px;
+        width: 15px;
         height: auto;
-        margin: 0 8px 0 2px;
+        margin: 0; 
+    }
+
+    &:hover {
+        background-color: $primary-color; 
+        color: white; 
+        
+        img {
+            filter: brightness(0) invert(1); 
+        }
     }
 }
 
-.button-project:hover {
-    background-color: $primary-color;
-    border: none;
-
-    a {
-        color: white;
-        font-weight: lighter;
-    }
-
-    img {
-        filter: grayscale(0%) invert(100%);
-    }
-}
 
 .year {
     font-size: 13px;
@@ -208,12 +196,3 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(160,149,175,1) 
 background-attachment: fixed;
 }*/
 
-/* Floating project cards 
-.index-card {
-    position: relative;
-    z-index: 2;
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}*/

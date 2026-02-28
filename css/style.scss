@@ -60,10 +60,9 @@
   margin: 0;
   padding: 0;
 
-  font-family: interLight;
+  font-family: poppinsLight;
   font-size: 16px;
 
-  letter-spacing: 0.01em;
   line-height: 1.5;
 }
 
@@ -126,27 +125,28 @@ h2,
 h3,
 h4 {
   margin-bottom: 5px;
+   letter-spacing: 0.01em;
 }
 
 h1 {
-  font-size: 2.2rem;
-   font-family: playfairRegular;
+  font-size: 2.4rem;
+   font-family: poppinsRegular;
    word-spacing: 0.05em;
   
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding-top: 15px;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.44rem;
   padding-top: 15px;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -169,7 +169,7 @@ a:hover {
 
 /*active link */
 .underline {
-  border-bottom: 4px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
   border-radius: 2px;
 }
 
@@ -177,22 +177,30 @@ a:hover {
 .short-underline {
   position: relative;
   display: inline-block;
-  /* Sørger for at bakgrunnen bak teksten er hvit om nødvendig */
-  background-color: white; 
 }
 
-.short-underline::before {
+.short-underline::after {
+  content: "";
+  position: absolute;
+  /* Juster denne prosentandelen for å flytte streken horisontalt */
+  left: 0; 
+  bottom: -5px; 
+  width: 20%;   
+  height: 3px;   
+  background-color: $primary-color;
+  border-radius: 2px;
+}
+
+/* .short-underline::before {
   content: '';
   position: absolute;
-  bottom: -6px; /* Plassering under teksten */
+  bottom: -6px; 
   left: 0;
-  width: 70px;  /* Lengden du hadde fra før */
-  height: 7px; /* Litt tykkere for at pensel-effekten skal syns */
-  
-  /* Her bruker vi variabelen din */
+  width: 70px;  
+  height: 7px; 
   background-color: $primary-color;
 
-  /* Denne masken lager pensel-formen */
+  
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,10 C20,5 40,15 60,8 C80,2 90,12 100,7 L100,15 C85,18 70,10 50,15 C30,20 10,12 0,16 Z" fill="black"/></svg>');
   mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,10 C20,5 40,15 60,8 C80,2 90,12 100,7 L100,15 C85,18 70,10 50,15 C30,20 10,12 0,16 Z" fill="black"/></svg>');
   
@@ -201,9 +209,10 @@ a:hover {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
-  /* Litt rotasjon for å fjerne det "stive" preget */
   transform: rotate(1.1deg);
-}
+}*/
+
+
 
 .design-process h2 {
   font-size: 1.7rem;

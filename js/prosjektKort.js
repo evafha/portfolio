@@ -7,7 +7,7 @@ class prosjektKort extends HTMLElement {
     const info = this.getAttribute('info') || '';
     const lenke = this.getAttribute('lenke') || '#';
     const pilIkon = this.getAttribute('pil-ikon') || 'assets/images/arrow.png';
-    
+
     // Sjekk om vi skal bytte side (swap)
     const skalBytte = this.getAttribute('swap') === 'true';
     const swapContentKlasse = skalBytte ? 'swap-content' : '';
@@ -23,12 +23,11 @@ class prosjektKort extends HTMLElement {
           <p>${info}</p>
 
           <div>
-            <button class="button-project">
-              <a href="${lenke}">
-                <img src="${pilIkon}" alt="Pil"> Se prosjekt
-              </a>
-            </button>
-          </div>
+  <a href="${lenke}" class="button-project">
+    Se prosjekt 
+    <img src="${pilIkon}" alt="Pil">
+  </a>
+</div>
         </div>
       </div>
     `;
