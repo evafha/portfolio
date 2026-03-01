@@ -107,44 +107,62 @@ img {
 
 
 
-/* Stil for selve bildene på siden */
+/* Lightbox bilder */
 .click-open {
-  cursor: zoom-in;
-  transition: transform 0.2s ease;
+  cursor: zoom-in; 
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .click-open:hover {
-  transform: scale(1.02);
+  opacity: 0.9; 
+  transform: scale(1.01); 
 }
 
-/* Lightbox-bakgrunnen */
-#lightbox-overlay {
-  display: none; /* Skjult helt til JS aktiverer det */
+#dynamic-lightbox {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
   justify-content: center;
   align-items: center;
-  cursor: zoom-out;
 }
 
-/* Det forstørrede bildet i lightboxen */
-#lightbox-img {
+#dynamic-lightbox.active {
+  display: flex;
+}
+
+/* Selve bildet */
+#dynamic-img {
   max-width: 90%;
   max-height: 90%;
-  user-select: none;
-  transition: transform 0.25s ease-in-out;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
 }
 
-/* En egen klasse vi legger på med JS for zoom-effekt */
-#lightbox-img.zoomed {
+#dynamic-img.zoomed {
   transform: scale(1.5);
   cursor: zoom-out;
+}
+
+/* Lukkekrysset */
+#lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: $white;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+}
+
+#lightbox-close:hover {
+  color: $primary-color;
 }
 
 
@@ -272,7 +290,7 @@ a:hover {
 
 
 
-/* Start-tilstand for alle prosjektkort */
+/* Animasjon*/
 .reveal {
   opacity: 0;
   transform: translateY(20px);
