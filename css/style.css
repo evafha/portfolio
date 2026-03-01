@@ -583,7 +583,7 @@ p {
 }
 
 .title {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   margin: 45px 0 7px 0;
 }
 
@@ -932,7 +932,7 @@ ul {
 }
 
 *:focus {
-  outline: 1px solid #816E81;
+  outline: 3px solid #816E81;
 }
 
 /* Body and HTML styles */
@@ -966,12 +966,12 @@ img {
 /* Lightbox bilder */
 .click-open {
   cursor: zoom-in;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .click-open:hover {
   opacity: 0.9;
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 #dynamic-lightbox {
@@ -1142,10 +1142,10 @@ a:hover {
     font-size: 2.4rem;
   }
   h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.44rem;
+    font-size: 1.5rem;
   }
   h4 {
     font-size: 1.2rem;

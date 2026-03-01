@@ -20,7 +20,7 @@ class ProsjektHeader extends HTMLElement {
                             <h1>${tittel}</h1>
                             <p>${beskrivelse}</p>
                         </div>
-                        <img class="header-img" src="${bildeSrc}" alt="${bildeAlt}">
+                        <img class="header-img click-open" src="${bildeSrc}" alt="${bildeAlt}">
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ class ProsjektInfo extends HTMLElement {
 
     this.innerHTML = `
       <div class="problem-statement">
-        <h1 class="short-underline">${overskrift}</h1>
+        <h2 class="short-underline">${overskrift}</h2>
         <div class="beskrivelse-tekst">
           <p>${beskrivelse}</p>
         </div>
@@ -79,7 +79,39 @@ customElements.define('prosjekt-info', ProsjektInfo);
 
 
 
-/* --- IKKE KOMPONENT 3: SE MER ARBEID  --- */
+
+/* --- KOMPONENT 3: LØSNING  --- */
+class ProjectSolution extends HTMLElement {
+    connectedCallback() {
+        const project = this.getAttribute('project') || '';
+        
+        // Henter alle <img>-tagger du har skrevet i HTML-en
+        const originalImages = Array.from(this.querySelectorAll('img'));
+
+        // Lager en ny liste med bilder hvor vi tvinger på de riktige klassene
+        const formattedImages = originalImages.map(img => {
+            return `<img class="mobile-mockup click-open" 
+                         src="${img.getAttribute('src')}" 
+                         alt="${img.getAttribute('alt') || ''}">`;
+        }).join('');
+
+        // Erstatter innholdet med den ferdige strukturen
+        this.innerHTML = `
+            <div class="solution ${project}">
+                <div class="solution-showcase">
+                    ${formattedImages}
+                </div>
+            </div>
+        `;
+    }
+}
+
+customElements.define('project-solution', ProjectSolution);
+
+
+
+
+/* --- IKKE KOMPONENT 4: SE MER ARBEID  --- */
 const myWorkHTML = `
 <div class="my-work">
     <h4>Se mer av arbeidet mitt</h4>

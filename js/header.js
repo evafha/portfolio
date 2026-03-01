@@ -10,7 +10,7 @@ document.write('                <div class="bar3"></div>');
 document.write('            </div>');
 document.write('');
 document.write('            <a href="../index.html" class="menu-logo">');
-document.write('                <img src="../assets/images/logo.png" alt="Logo">');
+document.write('                <img src="../assets/images/logo.png" alt="logo for hjemmesiden">');
 document.write('            </a>');
 document.write('');
 document.write('            <ul>');

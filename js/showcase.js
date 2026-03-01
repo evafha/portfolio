@@ -12,7 +12,7 @@
 
     { imgSrc: '../assets/images/luna/luna-front.png ', description: 'Luna Restaurant', link: 'luna.html' },
 
-    { imgSrc: '../assets/images/saltpepper/salt&pepper-front.png', description: 'Salt & Pepper Gjøvik', link: 'saltpepper.html' },
+    { imgSrc: '../assets/images/saltpepper/saltpepper-front.png', description: 'Salt & Pepper Gjøvik', link: 'saltpepper.html' },
 
 
     // Add more projects as needed
