@@ -13,8 +13,9 @@ class prosjektKort extends HTMLElement {
     const swapContentKlasse = skalBytte ? 'swap-content' : '';
     const swapTextKlasse = skalBytte ? 'swap-text' : '';
 
+    // Vi legger til "reveal"-klassen her for animasjon
     this.innerHTML = `
-      <div class="index-card ${swapContentKlasse}">
+      <div class="index-card reveal ${swapContentKlasse}">
         <img src="${bilde}" alt="${altTekst}" class="image">
 
         <div class="text ${swapTextKlasse}">
@@ -23,15 +24,32 @@ class prosjektKort extends HTMLElement {
           <p>${info}</p>
 
           <div>
-  <a href="${lenke}" class="button-project">
-    Se prosjekt 
-    <img src="${pilIkon}" alt="Pil">
-  </a>
-</div>
+            <a href="${lenke}" class="button-project">
+              Se prosjekt 
+              <img src="${pilIkon}" alt="Pil">
+            </a>
+          </div>
         </div>
       </div>
     `;
+
+    // Start observasjon av dette spesifikke elementet
+    const card = this.querySelector('.reveal');
+    observer.observe(card);
   }
 }
+
+// Definer observeren utenfor klassen så den kan gjenbrukes av alle kortene
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      // Stopper overvåking etter at det er vist for å spare ressurser
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1 // Trigg når 10% av kortet er synlig
+});
 
 customElements.define('prosjekt-kort', prosjektKort);
