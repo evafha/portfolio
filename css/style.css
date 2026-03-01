@@ -318,6 +318,7 @@ nav,
   animation: fadeIn 1.5s ease-in-out;
 }
 .welcome-header h1 {
+  font-size: 1.45rem;
   margin-top: 20px;
   margin-bottom: 20px;
 }
