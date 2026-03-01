@@ -129,24 +129,24 @@ h4 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 1.9rem;
    font-family: poppinsRegular;
    word-spacing: 0.05em;
   
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding-top: 15px;
 }
 
 h3 {
-  font-size: 1.44rem;
+  font-size: 1.3rem;
   padding-top: 15px;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 p {
@@ -236,6 +236,23 @@ a:hover {
 
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
+
+  h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.44rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
   .swap-content {
     display: grid;
     grid-template-areas:
