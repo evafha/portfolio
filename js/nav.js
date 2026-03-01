@@ -28,7 +28,6 @@ menuLinks.forEach(link => {
 
 // KLIKK FOR Å FORSTØRRE BILDER
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Lag elementene
   const overlay = document.createElement('div');
   const lbImage = document.createElement('img');
   const closeBtn = document.createElement('span');
@@ -36,42 +35,79 @@ document.addEventListener('DOMContentLoaded', () => {
   overlay.id = 'dynamic-lightbox';
   lbImage.id = 'dynamic-img';
   closeBtn.id = 'lightbox-close';
-  closeBtn.innerHTML = '&times;'; // Dette lager krysset
+  closeBtn.innerHTML = '&times;';
 
   overlay.appendChild(closeBtn);
   overlay.appendChild(lbImage);
   document.body.appendChild(overlay);
 
-  // 2. Funksjon for å lukke
-  const lukkLightbox = () => {
-    overlay.classList.remove('active');
-    lbImage.classList.remove('zoomed');
-    document.body.style.overflow = '';
+  let scale = 1;
+  let evCache = []; 
+  let prevDiff = -1;
+
+  const updateTransform = () => {
+    lbImage.style.transform = `scale(${scale})`;
   };
 
-  // 3. Lytt etter klikk
-  document.addEventListener('click', (e) => {
-    // Åpne bildet
-    if (e.target.classList.contains('click-open')) {
-      lbImage.src = e.target.src;
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
+  // --- 1. Scroll-zoom (Desktop) ---
+  overlay.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const zoomSpeed = 0.12;
     
-    // Lukke via krysset ELLER bakgrunnen
-    else if (e.target === closeBtn || e.target === overlay) {
-      lukkLightbox();
+    if (e.deltaY < 0) {
+      scale = Math.min(scale + zoomSpeed, 4); // Maks 4x zoom
+    } else {
+      // ENDRET: Stopper på 1 i stedet for 0.5
+      scale = Math.max(scale - zoomSpeed, 1); 
     }
-    
-    // Zoom på selve bildet
-    else if (e.target === lbImage) {
-      lbImage.classList.toggle('zoomed');
+    updateTransform();
+  }, { passive: false });
+
+  // --- 2. Pinch-zoom (Mobil) ---
+  lbImage.addEventListener('pointerdown', (e) => {
+    evCache.push(e);
+  });
+
+  lbImage.addEventListener('pointermove', (e) => {
+    const index = evCache.findIndex((ev) => ev.pointerId === e.pointerId);
+    if (index > -1) evCache[index] = e;
+
+    if (evCache.length === 2) {
+      const curDiff = Math.hypot(
+        evCache[0].clientX - evCache[1].clientX, 
+        evCache[0].clientY - evCache[1].clientY
+      );
+
+      if (prevDiff > 0) {
+        if (curDiff > prevDiff) {
+          scale = Math.min(scale + 0.05, 4);
+        } else if (curDiff < prevDiff) {
+          // ENDRET: Stopper på 1
+          scale = Math.max(scale - 0.05, 1);
+        }
+        updateTransform();
+      }
+      prevDiff = curDiff;
     }
   });
 
-  // Lukke med ESC-tasten (valgfritt, men anbefalt)
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') lukkLightbox();
+  lbImage.addEventListener('pointerup', (e) => {
+    evCache = evCache.filter((ev) => ev.pointerId !== e.pointerId);
+    if (evCache.length < 2) prevDiff = -1;
+  });
+
+  // --- 3. Åpne/Lukke ---
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('click-open')) {
+      lbImage.src = e.target.src;
+      scale = 1; // Alltid start på 1:1 visning
+      updateTransform();
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    } else if (e.target === closeBtn || e.target === overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
   });
 });
 
