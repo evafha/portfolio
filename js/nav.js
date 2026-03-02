@@ -26,6 +26,12 @@ menuLinks.forEach(link => {
 });
 
 
+
+
+
+
+
+
 // KLIKK FOR Å FORSTØRRE BILDER
 document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.createElement('div');
@@ -110,3 +116,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+
+
+
+
+
+
+// ANIMASJON
+// 1. Definer observeren én gang globalt
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      // Slutt å observere når animasjonen er ferdig
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1 // Trigg når 10% er synlig
+});
+
+// 2. Funksjon for å starte observasjon på alle eksisterende elementer
+const initReveals = () => {
+  const elements = document.querySelectorAll('.reveal');
+  elements.forEach(el => revealObserver.observe(el));
+};
+
+// Kjør når siden er lastet
+document.addEventListener('DOMContentLoaded', initReveals);

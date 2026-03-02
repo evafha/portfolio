@@ -168,6 +168,10 @@ h2#portfolio {
 
 
 
+
+
+
+
 /* Typewriter */
 .typewriter {
   overflow: hidden; 
@@ -179,7 +183,7 @@ h2#portfolio {
   line-height: 1.25;    
  
   animation: 
-    typing 1.5s steps(25, end) forwards, 
+    typing 2.2s steps(25, end) forwards, 
     blink-caret 0.75s step-end 5 forwards;
 }
 
@@ -195,6 +199,10 @@ h2#portfolio {
   to { border-color: transparent; }
   50% { border-color: transparent; }
 }
+
+
+
+
 
 
 
@@ -222,12 +230,18 @@ h2#portfolio {
    
 }
 
+
+
 /* Media queries for even larger screens */
 @media only screen and (min-width: 1000px) {
     .index-card.three-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
 
 /* Make the body background fixed 
 body {

@@ -221,14 +221,6 @@ p {
   font-size: 1rem;
 }
 
-/*.small {
-  font-size: 0.833rem;
-}
-
-.smaller {
-  font-size: 0.694rem;
-}*/
-
 a:hover {
   font-weight: 600;
   /*text-decoration: underline;*/
@@ -249,7 +241,6 @@ a:hover {
 .short-underline::after {
   content: "";
   position: absolute;
-  /* Juster denne prosentandelen for å flytte streken horisontalt */
   left: 0; 
   bottom: -5px; 
   width: 20%;   

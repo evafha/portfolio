@@ -433,7 +433,7 @@ h2#portfolio {
   letter-spacing: 0.04em;
   width: fit-content;
   line-height: 1.25;
-  animation: typing 1.5s steps(25, end) forwards, blink-caret 0.75s step-end 5 forwards;
+  animation: typing 2.2s steps(25, end) forwards, blink-caret 0.75s step-end 5 forwards;
 }
 
 /* Selve skriveeffekten */
@@ -1101,13 +1101,6 @@ p {
   font-size: 1rem;
 }
 
-/*.small {
-  font-size: 0.833rem;
-}
-
-.smaller {
-  font-size: 0.694rem;
-}*/
 a:hover {
   font-weight: 600;
   /*text-decoration: underline;*/
@@ -1128,7 +1121,6 @@ a:hover {
 .short-underline::after {
   content: "";
   position: absolute;
-  /* Juster denne prosentandelen for å flytte streken horisontalt */
   left: 0;
   bottom: -5px;
   width: 20%;
