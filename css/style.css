@@ -595,7 +595,7 @@ p {
 
 .header {
   padding: 40px 24px 20px 24px;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 
 .header-max {
@@ -838,6 +838,10 @@ ul {
 .experience,
 .resume {
   margin-bottom: 20px;
+}
+
+.header-about {
+  margin-bottom: 12px;
 }
 
 .about-img {
