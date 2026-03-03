@@ -594,7 +594,7 @@ p {
 }
 
 .header {
-  padding: 40px 40px 20px 40px;
+  padding: 40px 24px 20px 24px;
   margin-bottom: 50px;
 }
 
@@ -830,13 +830,14 @@ ul {
     margin: 40px auto;
   }
 }
+/*BUTTON*/
 .about,
 .skills-general,
 .skills,
 .education,
 .experience,
 .resume {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .about-img {
@@ -859,7 +860,11 @@ ul {
 }
 
 .education > div:nth-child(3) {
-  margin-top: 35px;
+  margin-top: 24px;
+}
+
+.education h3, .experience h3 {
+  padding-top: 5px;
 }
 
 .cursiv {
@@ -899,6 +904,9 @@ ul {
   .education,
   .experience {
     padding: 25px 0 0 0;
+  }
+  .education h3, .experience h3 {
+    padding-top: 15px;
   }
   .about-text {
     display: grid !important; /* !important for å sjekke om noe annet overstyrer */
@@ -977,12 +985,13 @@ html {
 
 body {
   font-size: 16px;
+  margin: 0 auto;
 }
 
 main {
   margin: 0 auto;
   max-width: 900px;
-  padding: 0 40px;
+  padding: 0 24px;
 }
 
 img {

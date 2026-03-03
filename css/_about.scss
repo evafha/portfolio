@@ -1,10 +1,11 @@
+/*BUTTON*/
 .about,
 .skills-general,
 .skills,
 .education,
 .experience,
 .resume {
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .about-img {
@@ -27,7 +28,11 @@
 }
 
 .education > div:nth-child(3) {
-    margin-top: 35px;
+    margin-top: 24px;
+}
+
+.education h3, .experience h3 {
+    padding-top: 5px;
 }
 
 .cursiv {
@@ -60,6 +65,10 @@
     .experience {
         padding: 25px 0 0 0;
     }
+
+    .education h3, .experience h3 {
+    padding-top: 15px;
+}
 
     .about-text {
         display: grid !important; /* !important for å sjekke om noe annet overstyrer */
