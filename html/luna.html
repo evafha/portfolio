@@ -19,7 +19,7 @@
     <script src="../js/header.js"> </script>
 
     <prosjekt-header prosjekt-klasse="luna" tittel="Luna Restaurant"
-        beskrivelse="Luna er en ny restaurant som åpnet dørene november 2025 med fokus på sesongbaserte råvarer."
+        beskrivelse="Nyetablert restaurant i Gjøvik som serverer middelhavsretter basert på norske sesongråvarer."
         bilde-src="../assets/images/luna/luna-header.png" bilde-alt="Luna Restaurant mockup desktop">
     </prosjekt-header>
 
@@ -41,11 +41,8 @@
 
             <h3>Metoder og verktøy</h3>
             <p>Jeg tegnet først ut designet i Figma før jeg bygde det i WordPress. Siden jeg er vant til å skrive kode
-                med HTML og CSS, var det en overgang å bruke et ferdig system. </p>
-
-            <!--<img src="../assets/images/norkart/mulighetstre.jpg" alt="">-->
-
-            <p>Det var uvant å jobbe i et ferdig WordPress-oppsett der man ikke har full kontroll på kildekoden. Jeg
+                med HTML og CSS, var det en overgang å bruke et ferdig system. Det var uvant å jobbe i et ferdig
+                WordPress-oppsett der man ikke har full kontroll på kildekoden. Jeg
                 innså underveis at ting som ARIA-labler og "skip to main"-lenker krever en annen tilnærming her, og
                 dette er noe jeg jobber med å lære meg og implementere for å få siden helt i mål på tilgjengelighet.</p>
 
@@ -55,22 +52,35 @@
                 <div class="swap-text">
                     <h2>Løsningen</h2>
 
-                    <p>Nettsiden fungerer nå som restaurantens ansikt utad:</p>
+                    <p>Nettsiden er restaurantens viktigste kontaktpunkt før gjestene i det hele tatt har satt seg ved
+                        bordet. Målet har vært å skape en digital flate som gjør det brukervennlig og intuitivt å
+                        bestille bord og se på menyen.</p>
 
                     <ul>
-                        <li><strong>Enkel booking:</strong> Bordbestillingen er integrert direkte, så gjestene slipper
-                            unødvendige klikk.</li>
-                        <li><strong>Meny som lever:</strong> De ansatte oppdaterer selv sesongmenyen på 1-2-3.</li>
-                        <li><strong>Riktig førsteinntrykk:</strong> Designet gir gjestene en følelse av hva de har i
-                            vente før de i det hele tatt har kommet til restauranten.</li>
+                        <li><strong>Bookingknappen er fremhevet i primærfargen</strong></li>
+                        <li><strong>Enkel oppdatering av sesongmeny</strong></li>
+                        <li><strong>Integrert bestillingsflyt</strong></li>
                     </ul>
 
+                    <p>Nettsiden er designet for å prøve å fjerne unødvendige steg i gjestereisen. Ved å bruke en
+                        tydelig kontrastfarge på bookingknappen, leder vi gjesten intuitivt til reservasjon uten at de
+                        trenger å lete. Selve bookingskjema er integrert gjennom en ekstern aktør, men er prøvd å
+                        implementeres slik at flyten fortsatt beholdes.</p>
 
                     <project-solution project="luna">
                         <img src="../assets/images/luna/luna-mockup-1.png" alt="mockup hjemsiden">
                         <img src="../assets/images/luna/luna-mockup-2.png" alt="mockup underholdning">
                         <img src="../assets/images/luna/luna-mockup-3.png" alt="mockup kontaktskjema">
                     </project-solution>
+
+                    <p>Per nå er menyene lagt inn som en PDF, noe som gir kunden en rask og enkel måte å oppdatere
+                        innholdet selv. Som et alternativ har jeg også utarbeidet en annen løsning med filtrering som er
+                        mer egnet for søkemotoroptimalisering. Siden søkemotorer har lettere for å lese tekst enn
+                        dokumenter, vil en slik struktur bidra til at restauranten blir mer synlig når folk søker etter
+                        spesifikke retter på nett. Denne løsningen er laget som et forslag til hvordan man kan ta steget
+                        videre fra PDF-en for å maksimere synligheten i søkeresultatene.</p>
+
+                    <img class="click-open" src="../assets/images/luna/luna-desktop.png" alt="mockup desktop">
 
 
                     <div class="button-container">
@@ -87,24 +97,23 @@
 
         <div class="learned">
             <h2 class="short-underline">Hva har jeg lært fra dette prosjektet</h2>
-
-            <p>
-                Noen av de viktigste erfaringene er:
+            <p>Dette prosjektet har gitt meg verdifull innsikt i hvordan man balanserer kundens behov for enkel
+                administrasjon med tekniske krav til synlighet og tilgjengelighet. Noen av de viktigste erfaringene er:
             </p>
 
             <ul>
-                <li>Samarbeid</li>
-                <li>Erfaring med å oversette designprinsipper til et CMS som WordPress</li>
-                <li>Viktigheten av å identifisere tekniske mangler (som UU) og lære seg hvordan de skal løses i nye
-                    rammeverk</li>
+                <li>Tett samarbeid med kunden</li>
+                <li>Erfaring med implementering av design i WordPress</li>
+                <li>Håndtering av universell utforming i nye rammeverk</li>
+                <li>Forståelse av søkemotoroptimalisering</li>
             </ul>
 
-            <!-- <div>
-                <h4>Viktige innsikter</h4>
-                <img src="" alt="">
- 
-                <p></p>
-        </div>-->
+            <p>
+                Det har vært lærerikt å identifisere tekniske mangler og finne
+                praktiske metoder for å løse disse i et nytt rammeverk. Jeg har også tilegnet meg mer kunnskap om SEO og hvordan tekniske valg påvirker restaurantens synlighet
+                på nett. Ved å utforske forskjellen mellom enkle PDF-løsninger og tekstbaserte menyer, har jeg lært
+                hvordan man kan lage en nettside for å tiltrekke seg flere gjester gjennom søkemotorer.
+            </p>
 
         </div>
 
