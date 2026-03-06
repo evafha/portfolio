@@ -33,6 +33,7 @@ customElements.define('prosjekt-header', ProsjektHeader);
 
 
 /* --- KOMPONENT 2: PROSJEKT INFO --- */
+/* --- KOMPONENT 2: PROSJEKT INFO --- */
 class ProsjektInfo extends HTMLElement {
   connectedCallback() {
     const overskrift = this.getAttribute('overskrift') || 'Prosjektnavn';
@@ -40,11 +41,19 @@ class ProsjektInfo extends HTMLElement {
     const rolle = this.getAttribute('rolle') || 'UX designer';
     const tid = this.getAttribute('tid') || '';
     
-    // Håndterer verktøy-bilder
-    const verktoy = this.getAttribute('verktoy') || '';
-    const verktoyHtml = verktoy.split(',').map(src => 
-      `<img src="${src.trim()}" alt="Verktøy">`
-    ).join('');
+    // Henter ut begge strengene
+    const verktoyStreng = this.getAttribute('verktoy') || '';
+    const altStreng = this.getAttribute('alt') || '';
+
+    // Splitter dem til lister
+    const bilder = verktoyStreng.split(',').filter(s => s.trim() !== '');
+    const altTekster = altStreng.split(',').map(s => s.trim());
+
+    // Mapper bildene og henter tilsvarende alt-tekst via index
+    const verktoyHtml = bilder.map((src, index) => {
+      const beskrivelse = altTekster[index] || 'Verktøyikon';
+      return `<img src="${src.trim()}" alt="${beskrivelse}">`;
+    }).join('');
 
     this.innerHTML = `
       <div class="problem-statement">

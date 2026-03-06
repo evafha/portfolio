@@ -1,40 +1,28 @@
-class prosjektKort extends HTMLElement {
-  connectedCallback() {
-    const bilde = this.getAttribute('bilde') || '';
-    const altTekst = this.getAttribute('alt') || 'Prosjektbilde';
-    const tittel = this.getAttribute('tittel') || 'Prosjektnavn';
-    const aar = this.getAttribute('aar') || '';
-    const info = this.getAttribute('info') || '';
-    const lenke = this.getAttribute('lenke') || '#';
-    const pilIkon = this.getAttribute('pil-ikon') || 'assets/images/arrow.png';
+connectedCallback() {
+  const verktoyStreng = this.getAttribute('verktoy') || '';
+  const altStreng = this.getAttribute('alt') || '';
 
-    const skalBytte = this.getAttribute('swap') === 'true';
-    const swapContentKlasse = skalBytte ? 'swap-content' : '';
-    const swapTextKlasse = skalBytte ? 'swap-text' : '';
+  // Gjør om strengene til lister (arrays)
+  const bilder = verktoyStreng.split(',').map(s => s.trim());
+  const altTekster = altStreng.split(',').map(s => s.trim());
 
-    this.innerHTML = `
-      <div class="index-card reveal ${swapContentKlasse}">
-        <img src="${bilde}" alt="${altTekst}" class="image">
-        <div class="text ${swapTextKlasse}">
-          <h3>${tittel}</h3>
-          <p class="year">${aar}</p>
-          <p>${info}</p>
-          <div>
-            <a href="${lenke}" class="button-project">
-              Se prosjekt 
-              <img src="${pilIkon}" alt="Pil">
-            </a>
-          </div>
-        </div>
+  // Generer HTML for hvert ikon basert på indeksen i listen
+  const ikonerHtml = bilder.map((src, index) => {
+    const alt = altTekster[index] || 'Verktøyikon';
+    return `<img src="${src}" alt="${alt}" class="verktoy-ikon">`;
+  }).join('');
+
+  this.innerHTML = `
+    <div class="prosjekt-info-container">
+      <h2>${this.getAttribute('overskrift')}</h2>
+      <p>${this.getAttribute('beskrivelse')}</p>
+      <div class="metadata">
+        <span><strong>Rolle:</strong> ${this.getAttribute('rolle')}</span>
+        <span><strong>Tid:</strong> ${this.getAttribute('tid')}</span>
       </div>
-    `;
-
-    // Finn elementet vi nettopp lagde og legg det til i den globale observeren
-    const card = this.querySelector('.reveal');
-    if (card && typeof revealObserver !== 'undefined') {
-      revealObserver.observe(card);
-    }
-  }
+      <div class="verktoy-liste">
+        ${ikonerHtml}
+      </div>
+    </div>
+  `;
 }
-
-customElements.define('prosjekt-kort', prosjektKort);
