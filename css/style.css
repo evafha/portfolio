@@ -1004,6 +1004,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /* Lightbox bilder */
