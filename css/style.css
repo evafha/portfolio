@@ -161,6 +161,17 @@ html.nav-active {
   color: #ac2022;
 }
 
+.solution.nhn,
+.header.nhn {
+  background-color: #002920;
+  color: white;
+}
+
+.nhn .short-underline::before {
+  background-color: #002920;
+  color: #002920;
+}
+
 .solution.IDG2012,
 .header.IDG2012 {
   background-color: #006081;

@@ -29,6 +29,7 @@ $IDG3006-color: #4FAD74;
 
 $luna-color: #485F45;
 $saltpepper-color: #231A26;
+$nhn-color: #002920;
 
 // Luna
 .solution.luna,
@@ -64,6 +65,18 @@ $saltpepper-color: #231A26;
 .myrsund .short-underline::before {
   background-color: $myrsund-color;
   color: $myrsund-color;
+}
+
+// Norsk helsenett
+.solution.nhn,
+.header.nhn {
+  background-color: $nhn-color;
+  color: white;
+}
+
+.nhn .short-underline::before {
+  background-color: $nhn-color;
+  color: $nhn-color;
 }
 
 // IDG2012
