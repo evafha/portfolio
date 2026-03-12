@@ -624,7 +624,6 @@ p {
 }
 
 .title {
-  font-size: 1.8rem;
   margin: 45px 0 7px 0;
 }
 
@@ -1102,19 +1101,19 @@ h4 {
 }
 
 h1 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-family: poppinsRegular;
   word-spacing: 0.05em;
 }
 
 h2 {
-  font-size: 1.5rem;
-  padding-top: 15px;
+  font-size: 1.7rem;
+  padding-top: 12px;
 }
 
 h3 {
   font-size: 1.3rem;
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 h4 {
