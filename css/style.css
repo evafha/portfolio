@@ -130,13 +130,13 @@ html.nav-active {
 }
 .solution.luna,
 .header.luna {
-  background-color: #485F45;
+  background-color: #41563E;
   color: white;
 }
 
 .luna .short-underline::before {
-  background-color: #485F45;
-  color: #485F45;
+  background-color: #41563E;
+  color: #41563E;
 }
 
 .solution.saltpepper,

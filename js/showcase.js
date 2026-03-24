@@ -1,18 +1,19 @@
  // Array of project data with internal links
  const projects = [
 
-    { imgSrc: '../assets/images/IDG2012/IDG2012-front.png', description: 'Webtilgjengelighet, Brukervennlighet og Etikk', link: 'web-accessibility.html' },
+    { imgSrc: '../assets/images/nhn/nhn-front.png', description: 'KI i helsetjenesten', link: 'norsk-helsenett.html' },
+    
+    //{ imgSrc: '../assets/images/IDG2012/IDG2012-front.png', description: 'Webtilgjengelighet, Brukervennlighet og Etikk', link: 'web-accessibility.html' },
 
     { imgSrc: '../assets/images/IDG2000/IDG2000-front.png', description: 'Design i Helsetjenester', link: 'design-in-healthcare.html' },
 
     { imgSrc: '../assets/images/norkart/norkart-front.png', description: 'Norkart Sommer 2025', link: 'norkart-sommer.html' },
 
-
-    { imgSrc: '../assets/images/IDG3750/IDG3750-front.png', description: 'Sensorisk og berøringsvennlig interaksjonsdesign', link: 'tangible-design.html' },
+    //{ imgSrc: '../assets/images/IDG3750/IDG3750-front.png', description: 'Sensorisk og berøringsvennlig interaksjonsdesign', link: 'tangible-design.html' },
 
     { imgSrc: '../assets/images/luna/luna-front.png ', description: 'Luna Restaurant', link: 'luna.html' },
 
-    { imgSrc: '../assets/images/saltpepper/saltpepper-front.png', description: 'Salt & Pepper Gjøvik', link: 'saltpepper.html' },
+    //{ imgSrc: '../assets/images/saltpepper/saltpepper-front.png', description: 'Salt & Pepper Gjøvik', link: 'saltpepper.html' },
 
 
     // Add more projects as needed
