@@ -3,14 +3,14 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2K2LWPW9R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2K2LWPW9R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-V2K2LWPW9R');
-</script>
+        gtag('config', 'G-V2K2LWPW9R');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,13 +38,14 @@
         <prosjekt-info overskrift="Om prosjektet"
             beskrivelse="Jeg var en del av Norkart Sommer 2025, og på kontoret i Lillehammer jobbet vi med å utvikle et varslingssenter i Komtek, som er Norkarts plattform for kommunaltekniske tjenester. Målet var å skape en løsning som ga saksbehandlere bedre oversikt over arbeidsoppgaver og relevante varsler, samtidig som brukeropplevelsen var intuitiv og enkel å navigere."
             rolle="Produktdesigner" tid="6 uker"
-            verktoy="../assets/images/figma.png , ../assets/images/miro.png, ../assets/images/google.webp" alt="Figma logo, Miro logo, Google logo">
+            verktoy="../assets/images/figma.png , ../assets/images/miro.png, ../assets/images/google.webp"
+            alt="Figma logo, Miro logo, Google logo">
         </prosjekt-info>
 
         <div class="design-process">
             <h2 class="title short-underline">Designprosessen</h2>
 
-            <p>Jeg hadde hovedansvaret for design og brukeropplevelse gjennom prosjektet. Prosessen startet med å samle
+            <p>Prosjektet ble drevet frem gjennom smidig utvikling, hvor jeg hadde hovedansvaret for design og brukeropplevelse gjennom prosjektet. Prosessen startet med å samle
                 innsikt gjennom workshops, intervjuer og møter med produkteiere og designere. Jeg kartla brukernes behov
                 og identifiserte utfordringene i den eksisterende løsningen, og gjorde brukertesting og A/B-testing for
                 å hjelpe meg å validere og forbedre løsningene underveis. Slik ser Norkarts metodikk ut for design og
@@ -56,33 +57,51 @@
                 tydelighet, universell utforming og enkel navigasjon. Vi tok i bruk visuelle hierarkier, fargebruk og
                 interaktive elementer for å sikre rask forståelse og effektiv bruk.</p>
 
-            <h3>Metoder og verktøy</h3>
+            <h3>Utforske</h3>
+
+            <p>I prosjektet brukte jeg både Miro og Figma som verktøy. Miro benyttet vi til samarbeid, planlegging og å
+                samle innsikt. Figma brukte jeg til design og prototyping. Norkart har et solid designsystem (Tōitsu), slik at mange løsninger kunne settes sammen ved å tilpasse
+                eksisterende elementer. I begynnelsen måtte jeg gjøre meg kjent med
+                designsystemet, og jeg endte opp med å lage egne komponenter som allerede
+                eksisterte fordi jeg ikke hadde full oversikt. Dette ga meg likevel verdifull læring og erfaring i å
+                lage egne komponenter fra bunnen. </p>
+
+            <h4>Persona</h4>
+            <p>Gjennom intervjuer med saksbehandlere som Inger, kartla vi en travel hverdag fylt med manuelle rutiner. Inger jobber i dag i to ulike systemer og mottar viktige varsler spredt over e-post, muntlige beskjeder og interne notater. Hennes største utfordring er å miste oversikt over kritiske saker og driftsmeldinger, noe som går utover kunden.</p>
+
+            <img class="click-open" src="../assets/images/norkart/norkart-persona.png" alt="norkart design prosess">
+
+            <h4>Mulighetstreet</h4>
             <p>En metode jeg spesielt vil trekke frem, er mulighetstreet. Dette var en tilnærming jeg lærte i
                 prosjektet, og som passet meg godt fordi jeg er en visuell person. Å kunne se en oversikt over ulike
                 løsninger, smertepunkter og behov gjorde det enklere å vurdere hvilke tiltak som hadde størst nytte.
-                Samtidig ga det en god mulighet til å kombinere flere ideer for å skape et enda bedre produkt. Jeg
-                utviklet også personas for å konkretisere
-                målgruppene og sikre at designet møtte faktiske behov.</p>
+                Samtidig ga det en god mulighet til å kombinere flere ideer for å skape et enda bedre produkt: </p>
 
             <img class="click-open" src="../assets/images/norkart/mulighetstre.jpg" alt="mulighetstre">
-
-            <p>I prosjektet brukte jeg både Miro og Figma som verktøy. Miro benyttet vi til samarbeid, planlegging og å
-                samle innsikt. Figma brukte jeg til design og prototyping. I begynnelsen måtte jeg gjøre meg kjent med
-                Norkarts eksisterende designsystem, og jeg endte underveis opp med å lage egne komponenter som allerede
-                eksisterte, fordi jeg ikke hadde full oversikt. Dette ga meg likevel verdifull læring og hjalp meg å
-                forstå systemets struktur bedre. </p>
-
-            <p>Norkart har et solid designsystem (Tōitsu), slik at mange løsninger kunne settes sammen ved å tilpasse
-                eksisterende elementer. Gjennom arbeidet utviklet jeg ferdigheter i effektiv bruk av Auto Layout og i å
-                lage egne komponenter som kan tilpasses ulike behov, noe som styrket både designflyt og fleksibilitet i
-                arbeidet.</p>
 
 
             <div class="display swap-content">
 
                 <div class="swap-text">
-                    <h2>Løsningen</h2>
+                    <h2>Levere</h2>
+                    <h4>AB-testing</h4>
+                    <p>Vi ønsket å teste hvordan saksbehandlerne ønsket å håndtere varslene sine. Vi satte derfor opp en AB-test mellom to ulike konsepter:
 
+                        <ul>
+                            <li><strong>Versjon A:</strong> Her fungerer varslingssenteret som en dynamisk 'to-do'-liste. Når et varsel er håndtert, forsvinner det fra listen for å holde arbeidsflaten ren.</li>
+                            <li><strong>Versjon B:</strong> Her blir alle varsler liggende, men de deles inn i 'Nye' og 'Tidligere'.</p></li>
+                        </ul>
+
+                    <img class="click-open" src="../assets/images/norkart/norkart-AB.jpg" alt="norkart design prosess">
+
+                    <p>Selv om prosjektet foregikk midt i fellesferien, valgte vi å gjennomføre testing med de som var tilgjengelige på kontoret. Resultatene viste at 88 % foretrakk arbeidslisten. Tilbakemeldingene bekreftet at det å se listen tømmes etter hvert som oppgavene ble gjort ga en mestringsfølelse, samtidig som det ble mye tydeligere hvilke varsler de faktisk ikke hadde rukket å se på ennå.</p>
+
+                    <h4>Håndtering av utfordring</h4>
+                    <p>En av de største utfordringene dukket opp da vi skulle koble opp for e-postvarslinger. Designet var allerede klart for implementering da vi møtte uforutsette restriksjoner i backenden kombinert med personvernhensyn. Vi fikk rett og slett ikke tilgang til de dataene vi trengte i løpet av prosjektperioden.</p>
+
+                    <p>Dette lærte meg hvor viktig det er med tidlig avklaring rundt tekniske begrensninger, og at et godt design må være fleksibelt nok til å tåle endringer i rammene vi hadde å jobbe innenfor.</p>
+
+                    <h3>Løsningen</h3>
 
                     <p>Løsningen vår er en bjelle i menyen som åpner et responsivt popup-vindu med varsler som er
                         relevante for deg. Når du klikker på et varsel, blir du sendt videre til den tilhørende siden,
