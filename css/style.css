@@ -130,24 +130,24 @@ html.nav-active {
 }
 .solution.luna,
 .header.luna {
-  background-color: #41563E;
+  background-color: #7B8E79;
   color: white;
 }
 
 .luna .short-underline::before {
-  background-color: #41563E;
-  color: #41563E;
+  background-color: #7B8E79;
+  color: #7B8E79;
 }
 
 .solution.saltpepper,
 .header.saltpepper {
-  background-color: #231A26;
+  background-color: #4E4450;
   color: white;
 }
 
 .saltpepper .short-underline::before {
-  background-color: #231A26;
-  color: #231A26;
+  background-color: #4E4450;
+  color: #4E4450;
 }
 
 .solution.myrsund,
