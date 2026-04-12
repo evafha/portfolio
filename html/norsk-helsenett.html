@@ -3,14 +3,14 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2K2LWPW9R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2K2LWPW9R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-V2K2LWPW9R');
-</script>
+        gtag('config', 'G-V2K2LWPW9R');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,169 +30,140 @@
 
     <prosjekt-header prosjekt-klasse="nhn" tittel="Norsk helsenett"
         beskrivelse="Norsk Helsenett leverer digital infrastruktur og har ansvar for driften av portalen helsenorge.no."
-        bilde-src="" bilde-alt="Kommer">
+        bilde-src="../assets/images/nhn/nhn-vera.png" bilde-alt="Kommer">
     </prosjekt-header>
 
     <main id="mainContent" class="norkart"> <!-- hopper til her -->
 
-        <prosjekt-info overskrift="Om prosjektet"
-            beskrivelse="I forbindelse med vår bacheloroppgave samarbeider vi med Norsk Helsenett for å utforske hvordan en KI-drevet chatbot kan brukes for å avgjøre om brukere har behov for å ringe legevakten eller ikke. Prosjektet undersøker hvordan teknologien kan veilede pasienter til riktig omsorgsnivå, slik at de som trenger akutt hjelp kommer raskere gjennom, mens andre får veiledning til egenbehandling eller fastlege."
-            rolle="UX-designer" tid="22 uker"
-            verktoy="../assets/images/figma.png , ../assets/images/miro.png, ../assets/images/google.webp" alt="Figma logo, Miro logo, Google logo">
+        <prosjekt-info overskrift="Om prosjektet" beskrivelse="Dette prosjektet ble gjennomført som bacheloroppgave i samarbeid med Norsk Helsenett. Bakgrunnen for prosjektet er et økende press på legevakten, der mange henvendelser skyldes usikkerhet heller enn akutte behov. Målet er å utforske hvordan ny teknologi kan hjelpe brukere å vurdere egen helsesituasjon før de kontakter legevakten. Vi kom fram til denne problemstillingen:
+            <ul>
+                <q> Hvordan kan vi bruke kunstig intelligens til å gi pasienter riktig hjelp til riktig tid?</q>
+            </ul>" rolle="UX-designer" tid="22 uker" verktoy="../assets/images/figma.png" alt="Figma logo">
         </prosjekt-info>
 
-        <div class="spacing"></div>
-
-        <h2>Mer informasjon kommer</h2>
-        <!-- 
         <div class="design-process">
             <h2 class="title short-underline">Designprosessen</h2>
 
-            <p>Jeg hadde hovedansvaret for design og brukeropplevelse gjennom prosjektet. Prosessen startet med å samle
-                innsikt gjennom workshops, intervjuer og møter med produkteiere og designere. Jeg kartla brukernes behov
-                og identifiserte utfordringene i den eksisterende løsningen, og gjorde brukertesting og A/B-testing for
-                å hjelpe meg å validere og forbedre løsningene underveis. Slik ser Norkarts metodikk ut for design og
-                produktutvikling:</p>
+            <p>Gjennom prosjektet har jeg hatt et delt ansvar for store deler av designprosessen, som inkluderte
+                innsiktsarbeid og konseptutvikling, men jeg hadde hovedansvar for å designe og lage prototypen og
+                planlegge brukertesting. Vi benyttet os av Double Diamond som rammeverk for å sikre en grundig
+                forståelse av problemområdet.</p>
 
-            <img class="click-open" src="../assets/images/norkart/norkart-design.png" alt="norkart design prosess">
+            <img class="click-open" src="../assets/images/nhn/nhn-doublediamond.png" alt="">
 
-            <p>Designet inkluderte et sentralt varslingssenter som samlet alle varsler på ett sted, med fokus på
-                tydelighet, universell utforming og enkel navigasjon. Vi tok i bruk visuelle hierarkier, fargebruk og
-                interaktive elementer for å sikre rask forståelse og effektiv bruk.</p>
 
-            <h3>Metoder og verktøy</h3>
-            <p>En metode jeg spesielt vil trekke frem, er mulighetstreet. Dette var en tilnærming jeg lærte i
-                prosjektet, og som passet meg godt fordi jeg er en visuell person. Å kunne se en oversikt over ulike
-                løsninger, smertepunkter og behov gjorde det enklere å vurdere hvilke tiltak som hadde størst nytte.
-                Samtidig ga det en god mulighet til å kombinere flere ideer for å skape et enda bedre produkt. Jeg
-                utviklet også personas for å konkretisere
-                målgruppene og sikre at designet møtte faktiske behov.</p>
+            <h3>Innsikt</h3>
+            <p>Hovedtanken vår var å lage en løsning relatert til smart innsjekk på legevakten, så i innsiktsfasen
+                begynte vi med å gjøre grundig desk research før vi gjennomførte intervjuer med flere helsepersonell på
+                legevaktene. Etter intervjuene oppdaget vi at flere av helsepersonelle hadde andre smertepunkter enn vi
+                trodde før intervjuene. Dermed byttet vi hovedfokus til å utforske noe av dette. Vi hadde også en
+                undersøkelse hvor vi fikk kvantitativ data av brukere på legevakten. Vi endte med en dypere dykk i å
+                forstå hvorfor brukere kontaktet legevakten</p>
 
-            <img class="click-open" src="../assets/images/norkart/mulighetstre.jpg" alt="mulighetstre">
+            <img class="click-open" src="../assets/images/nhn/nhn-affinity.png" alt="">
 
-            <p>I prosjektet brukte jeg både Miro og Figma som verktøy. Miro benyttet vi til samarbeid, planlegging og å
-                samle innsikt. Figma brukte jeg til design og prototyping. I begynnelsen måtte jeg gjøre meg kjent med
-                Norkarts eksisterende designsystem, og jeg endte underveis opp med å lage egne komponenter som allerede
-                eksisterte, fordi jeg ikke hadde full oversikt. Dette ga meg likevel verdifull læring og hjalp meg å
-                forstå systemets struktur bedre. </p>
+            <p>Brukerne er ofte i en situasjon der de ikke vet hvordan de skal tolke symptomer, og søker derfor
+                bekreftelse. En annen viktig innsikt var knyttet til tillit. Flere uttrykte skepsis til KI i
+                helsesammenheng,
+                spesielt hvis systemet fremstår som upersonlig eller vanskelig å forstå. Dette gjorde tillit til en
+                sentral faktor i videre designarbeid.</p>
 
-            <p>Norkart har et solid designsystem (Tōitsu), slik at mange løsninger kunne settes sammen ved å tilpasse
-                eksisterende elementer. Gjennom arbeidet utviklet jeg ferdigheter i effektiv bruk av Auto Layout og i å
-                lage egne komponenter som kan tilpasses ulike behov, noe som styrket både designflyt og fleksibilitet i
-                arbeidet.</p>
+            <p>I define-fasen handlet det om å skape struktur i en stor mengde innsikt. Vi hadde samlet både
+                kvantitative data og kvalitative intervjuer, og utfordringen var å identifisere hva som faktisk var
+                viktig å ta videre. </p>
+
+            <img class="click-open" src="../assets/images/nhn/nhn-survey.png" alt="">
+
+            <p>Med enorme mengder data var den største utfordringen å snevre inn fokuset uten å miste helheten. For å
+                systematisere funnene brukte vi et mulighetstre, som hjalp oss å koble brukerbehov
+                til mulige løsninger. Gjennom dette arbeidet ble det tydelig at usikkerhet var en gjennomgående faktor –
+                brukerne manglet ikke nødvendigvis informasjon, men trygghet i å tolke egen situasjon.</p>
+
+            <img class="click-open" src="../assets/images/nhn/nhn-mulighetstre.png" alt="">
+
+            <h3>Persona</h3>
+            <p>persona</p>
+            <img class="click-open" src="../assets/images/nhn/nhn-persona-1.png" alt="">
+
+            <p>Dette verktøyet hjalp oss å identifisere at chatboten måtte klare å tolke naturlig språk
+                ("jeg har vondt i brystet") og stille relevante oppfølgingsspørsmål uten å virke klinisk eller
+                skremmende. Vi landet på en problemstilling som handlet om å gi pasienter "riktig hjelp til riktig tid"
+                ved å oversette kompleks medisinsk logikk til et enkelt og menneskelig språk.</p>
+
+                <img class="click-open" src="../assets/images/nhn/nhn-user-journey.png" alt="">
+
+            <h3>Idéutvikling og konsepter</h3>
+            <p>Dette var den mest teknisk krevende fasen. Helsenorge bruker et omfattende designsystem som internt
+                kalles "Frankenstein". De hadde ingen design for selve chatboten da det var en tredjepartsløsning. Jeg
+                tok ansvaret for å bygge opp et eget
+                bibliotek i Figma fra bunnen av, da de eksisterende komponentene ikke støttet en kompleks chatbot-flyt.
+                Jeg designet alt fra interaktive valgknapper til komplekse moduler, alt sømløst integrert i Helsenorges
+                visuelle profil.</p>
+
+            <p>Siden Helsenorge sitt eksisterende designsystem ikke var tilpasset samtalebasert interaksjon, utviklet
+                jeg også et eget sett med komponenter. Dette inkluderte blant annet svaralternativer, statusindikatorer
+                og moduler for forklaringer underveis i dialogen.</p>
+
+
+            <p>For å ta de vanskeligste valgene brukte vi en Decision Matrix (beslutningsmatrise). Her veide vi ulike
+                løsninger opp mot pasientsikkerhet, teknisk gjennomførbarhet og universell utforming. Skulle chatboten
+                gi direkte råd, eller bare veilede? Ved å bruke dette verktøyet kunne vi begrunne hvorfor vi valgte bort
+                visse funksjoner til fordel for de som var mest trygge og effektive for sluttbrukeren.</p>
+
+            <img class="click-open" src="../assets/images/nhn/nhn-beslutningsmatrise.png" alt="">
+
+            <h3>Prototyping</h3>
+
+
+            <img class="click-open" src="../assets/images/nhn/nhn-persona-vera.png" alt="">
 
 
             <div class="display swap-content">
 
                 <div class="swap-text">
-                    <h2>Løsningen</h2>
+                    <h3>Løsningen</h3>
+
+                    <p>Løsningen vi utviklet er en KI-basert veileder integrert i Helsenorge, som hjelper brukere med å
+                        vurdere egen situasjon før de eventuelt kontakter legevakt.</p>
 
 
-                    <p>Løsningen vår er en bjelle i menyen som åpner et responsivt popup-vindu med varsler som er
-                        relevante for deg. Når du klikker på et varsel, blir du sendt videre til den tilhørende siden,
-                        og varselet fjernes automatisk fra popupen. Brukerne mottar kun varsler knyttet til de
-                        arbeidsområdene de jobber innen, og slipper dermed meldinger som ikke er relevante for dem.</p>
-
-                    <project-solution project="norkart">
-                        <img src="../assets/images/norkart/norkart-mockup-1.png" alt="mockup hjemsiden">
-                        <img src="../assets/images/norkart/norkart-mockup-2.png" alt="mockup underholdning">
-                        <img src="../assets/images/norkart/norkart-mockup-3.png" alt="mockup kontaktskjema">
+                    <project-solution project="nhn">
+                        <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
+                        <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
+                        <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
                     </project-solution>
 
-                    <p>Det er også mulig å se en full oversikt over alle varsler, samt markere varsler som ulest. Da
-                        vises de på nytt i popupen. På denne måten kan brukerne behandle varslene som en slags
-                        arbeidsliste.</p>
-
-                    <img class="click-open" src="../assets/images/norkart/mockup-desktop-1.png" alt="">
-
-                    <p>I tillegg kan brukerne tilpasse hvilke typer varsler de ønsker å motta og hvordan de mottar dem.
-                        Enkelte varsler er påkrevd, for eksempel systemfeil.</p>
-
-                    <img class="click-open" src="../assets/images/norkart/mockup-desktop-2.png" alt="">
-
+           
                 </div>
+
             </div>
 
+            <h3>Brukertesting</h3>
+            <p>Vi gjennomførte brukertester der deltakerne gikk gjennom ulike scenarioer.</p>
+
+            <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
+
+     
+
         </div>
-        
+
 
         <div class="learned">
             <h2 class="short-underline">Hva har jeg lært fra dette prosjektet</h2>
 
             <p>
-                Gjennom dette prosjektet har jeg fått mye verdifull erfaring som designer. Noen av de viktigste
-                lærdommene er:
+                Arbeidet med Norsk Helsenett har gitt meg verdifull erfaring med å designe for komplekse systemer der
+                teknisk innovasjon møter strenge krav til sikkerhet:
             </p>
 
             <ul>
-                <li>Betydningen av brukersentrert design og kontinuerlig testing.</li>
-                <li>Å balansere estetikk og funksjonalitet i praksis.</li>
-                <li>Viktigheten av samarbeid i et tverrfaglig team.</li>
-                <li>Å designe inkluderende løsninger med fokus på universell utforming.</li>
-                <li>Lage ikoner vi manglet i Figma</li>
+                <li>Arbeidet med designsystemet "Frankenstein" lærte meg å videreutvikle komplekse systemer uten å bryte
+                    helheten i tjenesten.</li>
+                <li>Jeg har lært hvordan språkbruk og visuelle bekreftelser er helt avgjørende for brukeropplevelsen i
+                    KI-tjenester.</li>
             </ul>
 
-            <p>
-                Jeg hadde prøvd å vurdert universell utforming gjennom hele prosjektet, men lærte viktigheten av å tenke
-                på hvordan interaksjoner fungerer på ulike skjermtyper først mot slutten.
-            </p>
-
-            <div class="wireframing">
-                <div class="case-box">
-                    <div class="section">
-                        <h4 class="challenge-title">Utfordring</h4>
-                        <p class="challenge-text">Vi kunne ikke implementere e-postfunksjonalitet slik vi hadde
-                            planlagt/ønsket.</p>
-                    </div>
-
-                    <div class="section">
-                        <h4 class="solution-title">Løsning</h4>
-                        <p class="solution-text">Jeg laget en midlertidig «sommerløsning» som kunne fungere i praksis,
-                            samtidig som jeg utviklet et forslag til en mer robust versjon for videreutvikling.</p>
-                    </div>
-                </div>
-
-                <div class="case-box">
-                    <div class="section">
-                        <h4 class="challenge-title">Utfordring</h4>
-                        <p class="challenge-text">Vi hadde en hover-funksjon for å markere elementer som ulest eller
-                            lest,
-                            som ikke fungerte på touch-enheter.</p>
-                    </div>
-
-                    <div class="section">
-                        <h4 class="solution-title">Løsning</h4>
-                        <p class="solution-text">Jeg tilpasset løsningen for både touch- og ikke-touch-enheter, og innså
-                            hvor viktig det er å lage løsninger som fungerer på tvers av plattformer.</p>
-                    </div>
-                </div>
-            </div>
-
-            <p>
-                Jeg fikk også erfaring med å tenke på små, men viktige scenarioer, som hva slags tekst som skal vises
-                når en
-                bruker ikke har noen filtreringer. Her fikk jeg god hjelp fra frontend-utvikleren, som gjennom sitt
-                arbeid med
-                koden stilte spørsmål og satte rammer jeg ikke hadde tenkt på selv. Hun kom med gode innspill rundt
-                filtreringsløsningen, og gjennom samarbeid fant vi en løsning som ble bedre enn den jeg opprinnelig
-                hadde sett
-                for meg.
-            </p>
-
-            <p>
-                Alt i alt har jeg lært utrolig mye i dette prosjektet, både om designprosessen, samarbeid og hvordan
-                man løser
-                konkrete utfordringer i praksis. Jeg fikk masse erfaring som jeg kan ta med meg videre, og det var svært
-                givende å jobbe i et tverrfaglig team. Ved å sitte sammen, snakke ofte, sparre og teste ideer
-                kontinuerlig,
-                kunne vi utvikle bedre løsninger raskt. Prosjektet har gitt meg en dypere forståelse av hvordan teori
-                fra
-                studiene kan overføres til praksis.
-            </p>
-
-
-
-        </div>-->
+        </div>
 
         <div class="spacing"></div>
 
