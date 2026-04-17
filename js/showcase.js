@@ -7,7 +7,7 @@
 
     { imgSrc: '../assets/images/IDG2000/IDG2000-front.png', description: 'Design i Helsetjenester', link: 'design-in-healthcare.html' },
 
-    { imgSrc: '../assets/images/norkart/norkart-front.png', description: 'Norkart Sommer 2025', link: 'norkart-sommer.html' },
+    { imgSrc: '../assets/images/norkart/norkart-front.png', description: 'Norkart', link: 'norkart.html' },
 
     //{ imgSrc: '../assets/images/IDG3750/IDG3750-front.png', description: 'Sensorisk og berøringsvennlig interaksjonsdesign', link: 'tangible-design.html' },
 
