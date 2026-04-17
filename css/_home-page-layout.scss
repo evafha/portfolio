@@ -28,7 +28,6 @@ nav,
     margin-bottom: 40px;
 }
 
-
 /*NYTT*/
 
 .ny-hero {
@@ -43,35 +42,33 @@ nav,
     height: 30px;
 }
 
-
 .welcome-header {
     margin: 0 auto;
     max-width: 850px;
     text-align: left;
     animation: fadeIn 1.5s ease-in-out;
 
- h1 {
-    font-size: 1.45rem;
+    h1 {
+        font-size: 1.45rem;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
- }
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
- p {
-    max-width: 750px;
-    margin-bottom: 15px;
- }
-    
+    p {
+        max-width: 750px;
+        margin-bottom: 15px;
+    }
 }
-
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
-
-
 
 span.welcome-design,
 span.welcome-design2 {
@@ -85,9 +82,9 @@ span.welcome-design2 {
 
 /* Styles for button */
 .button-project {
-    display: inline-flex; 
+    display: inline-flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
 
     /* Knappe-styling */
     border-radius: 4px;
@@ -95,7 +92,7 @@ span.welcome-design2 {
     background-color: $white;
     margin-top: 16px;
     padding: 5px 10px;
-    
+
     /* Tekst-styling */
     font-size: 12px;
     color: black;
@@ -106,19 +103,18 @@ span.welcome-design2 {
     img {
         width: 15px;
         height: auto;
-        margin: 0; 
+        margin: 0;
     }
 
     &:hover {
-        background-color: $primary-color; 
-        color: white; 
-        
+        background-color: $primary-color;
+        color: white;
+
         img {
-            filter: brightness(0) invert(1); 
+            filter: brightness(0) invert(1);
         }
     }
 }
-
 
 .year {
     font-size: 14px;
@@ -164,45 +160,70 @@ h2#portfolio {
     }
 }
 
-
-
-
-
-
-
 /* Typewriter */
 .typewriter {
-  overflow: hidden; 
-  border-right: .15em solid $primary-color; 
-  white-space: nowrap; 
-  letter-spacing: 0.04em; 
-  width: fit-content; 
-  
-  line-height: 1.25;    
- 
-  animation: 
-    typing 2.2s steps(25, end) forwards, 
-    blink-caret 0.75s step-end 5 forwards;
+    overflow: hidden;
+    border-right: 0.15em solid $primary-color;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    width: fit-content;
+
+    line-height: 1.25;
+
+    animation:
+        typing 2.2s steps(25, end) forwards,
+        blink-caret 0.75s step-end 5 forwards;
 }
 
 /* Selve skriveeffekten */
 @keyframes typing {
- from { width: 0; }
-  to { width: 19ch; }
+    from {
+        width: 0;
+    }
+    to {
+        width: 21ch;
+    }
 }
 
 /* Markøren som blinker */
 @keyframes blink-caret {
-  from { border-color: $primary-color; }
-  to { border-color: transparent; }
-  50% { border-color: transparent; }
+    from {
+        border-color: $primary-color;
+    }
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: transparent;
+    }
 }
 
 
 
 
+/*Samarbeid*/
+.collaborations {
+    display: flex;
+    flex-direction: row; /* Sørger for at de ligger på rad */
+    align-items: center; /* Sentrerer dem vertikalt mot hverandre */
+    gap: 50px;           /* Avstanden mellom logoene */
+    flex-wrap: nowrap;   /* Hindrer dem i å hoppe under hverandre */
+    padding-top: 15px;
+    padding-bottom: 35px;
+    
+    img {
+        height: 80px;    /* Justert litt ned for et nettere uttrykk */
+        width: auto;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        transition: all 0.4s ease;
 
-
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+}
 
 
 /* Media queries for larger screens */
@@ -225,10 +246,7 @@ h2#portfolio {
     .welcome-header h1 {
         font-size: 1.6rem;
     }
-   
 }
-
-
 
 /* Media queries for even larger screens */
 @media only screen and (min-width: 1000px) {
@@ -237,14 +255,9 @@ h2#portfolio {
     }
 }
 
-
-
-
-
 /* Make the body background fixed 
 body {
     background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(160,149,175,1) 50%, rgba(255,255,255,1) 100%);
 background-attachment: fixed;
 }*/
-

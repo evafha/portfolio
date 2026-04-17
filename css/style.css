@@ -451,7 +451,7 @@ h2#portfolio {
     width: 0;
   }
   to {
-    width: 19ch;
+    width: 21ch;
   }
 }
 /* Markøren som blinker */
@@ -466,6 +466,28 @@ h2#portfolio {
     border-color: transparent;
   }
 }
+/*Samarbeid*/
+.collaborations {
+  display: flex;
+  flex-direction: row; /* Sørger for at de ligger på rad */
+  align-items: center; /* Sentrerer dem vertikalt mot hverandre */
+  gap: 50px; /* Avstanden mellom logoene */
+  flex-wrap: nowrap; /* Hindrer dem i å hoppe under hverandre */
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+.collaborations img {
+  height: 80px; /* Justert litt ned for et nettere uttrykk */
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+.collaborations img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 /* Media queries for larger screens */
 @media only screen and (min-width: 770px) {
   .index-card {
