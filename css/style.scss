@@ -196,7 +196,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 h1 {
@@ -217,7 +217,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 p {
@@ -311,19 +311,19 @@ a:hover {
 @media only screen and (min-width: 770px) {
 
 h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.7rem;
+}
+
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
   .swap-content {

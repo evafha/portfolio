@@ -30,7 +30,7 @@
 
     <prosjekt-header prosjekt-klasse="nhn" tittel="Norsk helsenett"
         beskrivelse="Norsk Helsenett leverer digital infrastruktur og har ansvar for driften av portalen helsenorge.no."
-        bilde-src="../assets/images/nhn/nhn-vera.png" bilde-alt="Kommer">
+        bilde-src="../assets/images/nhn/nhn-mockup.png" bilde-alt="Kommer">
     </prosjekt-header>
 
     <main id="mainContent" class="norkart"> <!-- hopper til her -->
@@ -44,12 +44,10 @@
         <div class="design-process">
             <h2 class="title short-underline">Designprosessen</h2>
 
-            <p>Gjennom prosjektet har jeg hatt et delt ansvar for store deler av designprosessen, som inkluderte blant
-                annet
-                innsiktsarbeid og konseptutvikling, men jeg hadde hovedansvar for å designe og lage prototypen og
-                planlegge brukertesting. Vi brukte Double Diamond som rammeverk for å sikre at vi forsto problemområdet
-                før vi begynte å tegne løsninger. Dette hjalp oss å holde en rød tråd fra brukernes faktiske behov til
-                det ferdige produktet.</p>
+            <p>Gjennom prosjektet hadde jeg delt ansvar for innsiktsarbeidet og utviklingen av konseptet, men da vi gikk
+                over i løsningsfasen, hadde jeg hovedansvaret for å designe komponentene, bygge prototypen og lage
+                brukertestene. Vi brukte Double Diamond som rammeverk. Det tvang oss til å ikke hoppe rett på løsningen,
+                men faktisk tørre å stå i problemområdet lenge nok til at vi forsto hva folk egentlig trengte.</p>
 
             <img class="click-open" src="../assets/images/nhn/nhn-doublediamond.png" alt="">
 
@@ -58,128 +56,134 @@
             <p>Vi startet med en antagelse om at digital innsjekk på legevakten var det viktigste problemet. Etter desk
                 research og intervjuer med helsepersonell, oppdaget vi imidlertid at de største smertepunktene lå et
                 annet sted. Brukerne var ofte usikre på om de i det hele tatt trengte legehjelp. Denne innsikten gjorde
-                at vi endret fokus fra logistikk til å hjelpe folk med å vurdere egen situasjon hjemmefra.</p>
+                at vi endret fokus fra logistikk til å hjelpe folk med å vurdere egen situasjon selv.</p>
 
             <h3>Intervju og undersøkelser</h3>
             <p>For å forstå utfordringene ved legevakten, kombinerte vi kvalitative intervjuer med en kvantitativ
-                undersøkelse. Jeg snakket med helsepersonell for å forstå deres hverdag og smertepunkter. Samtidig
-                gjennomførte vi en spørreundersøkelse blant brukerne for å kartlegge deres behov. Dataene viste at
-                pasienter ofte kontakter legevakten fordi de ikke klarer å tolke egne symptomer. Denne kombinasjonen av
-                dypdykk i samtaler og tall fra mange brukere ga oss et solid grunnlag for det videre arbeidet.</p>
+                undersøkelse. Vi snakket med helsepersonell for å forstå deres hverdag og smertepunkter, samtidig
+                gjennomførte vi en spørreundersøkelse blant brukerne for å kartlegge deres behov. Dataene viste brukerne
+                ofte står i situasjoner der de blir usikre på egne symptomer, noe som skaper usikkerhet. Det som for
+                helsepersonell kan fremstå som en ufarlig tilstand, kan for brukeren oppleves som en intens og
+                skremmende smerte.</p>
 
             <img class="click-open" src="../assets/images/nhn/nhn-survey.png" alt="">
 
-
-            <p>Brukerne er ofte i en situasjon der de ikke vet hvordan de skal tolke symptomer, og søker derfor
-                bekreftelse. En annen viktig innsikt var knyttet til tillit. Flere uttrykte skepsis til KI i
-                helsesammenheng,
-                spesielt hvis systemet fremstår som upersonlig eller vanskelig å forstå. Dette gjorde tillit til en
-                sentral faktor i videre designarbeid.</p>
+            <p>Utfordringen oppstår når pasienter ringer for å få en avklaring, men ender opp med å føle seg avvist
+                fordi deres egen opplevelse ikke samsvarer med den medisinske vurderingen. Denne innsikten gjorde tillit
+                til en sentral faktor i det videre designarbeidet. Gjennom våre undersøkelser så vi en tydelig skepsis
+                til bruk av KI i helsesammenheng, spesielt hvis teknologien fremstår som kald, upersonlig eller
+                vanskelig å forstå. For at en digital tjeneste skal kunne avlaste legevakten, må den ikke bare gi
+                korrekte svar, men også møte brukeren med tydelighet som skaper den nødvendige tryggheten i en sårbar
+                situasjon.</p>
 
 
             <h2 class="title short-underline">Define</h2>
 
             <h3>Mulighetstre</h3>
 
-            <p>Med enorme mengder data var den største utfordringen å snevre inn fokuset uten å miste helheten. For å
+            <p>For å
                 systematisere funnene brukte vi et mulighetstre, som hjalp oss å koble brukerbehov
-                til mulige løsninger. Gjennom dette arbeidet ble det tydelig at usikkerhet var en gjennomgående faktor –
+                til mulige løsninger. Gjennom dette arbeidet ble det tydelig at usikkerhet var en gjennomgående faktor
+                og at
                 brukerne manglet ikke nødvendigvis informasjon, men trygghet i å tolke egen situasjon.</p>
 
             <img class="click-open" src="../assets/images/nhn/nhn-mulighetstre.png" alt="">
 
             <h3>Persona</h3>
 
-            <p>Basert på funnene våre utviklet vi en persona som representerte de mest typiske utfordringene pasientene
-                møter. Dette verktøyet var avgjørende for mine designvalg i Figma. Det hjalp meg å huske at chatboten
-                måtte snakke et enkelt, naturlig språk og stille relevante oppfølgingsspørsmål uten å virke for klinisk.
-                Personaen fungerte som en påminnelse om at målet vårt var å skape trygghet i en stressende situasjon.
-            </p>
+            <p>Basert på funnene våre utviklet vi to personaa som representerte en som trenger å ringe legevakten og en
+                som kan vente. </p>
 
             <img class="click-open" src="../assets/images/nhn/nhn-persona-1.png" alt="">
 
-            <p>Jeg utarbeidet en User Journey for å visualisere hele prosessen en bruker går gjennom, fra de første
-                symptomene oppstår til de får avklaring. Denne kartleggingen ble selve fundamentet for en av de
-                viktigste brukertestene våre. Ved å bruke denne reisen som utgangspunkt for et testscenario, kunne vi
-                observere hvordan chatboten fungerte i en realistisk sammenheng og se om den faktisk klarte å senke
-                stressnivået til brukeren underveis.</p>
+            <img class="click-open" src="../assets/images/nhn/nhn-persona-2.png" alt="">
 
-            <img class="click-open" src="../assets/images/nhn/nhn-user-journey.png" alt="">
+            <p>Jeg utarbeidet en User Journey for å visualisere hele prosessen en bruker går gjennom, fra de første
+                symptomene oppstår til de får avklaring. Denne kartleggingen ble selve fundamentet for brukertestene
+                våre. Ved å bruke denne reisen som utgangspunkt for et testscenario.</p>
+
+            <img class="click-open" src="../assets/images/nhn/nhn-user-journey-1.png" alt="">
+
+            <img class="click-open" src="../assets/images/nhn/nhn-user-journey-2.png" alt="">
 
             <h2 class="title short-underline">Develop</h2>
-            <p>Dette var den mest krevende delen av prosjektet. Helsenorge bruker et omfattende designsystem, men det
-                manglet ferdige komponenter for en kompleks chatbot-flyt. Jeg tok derfor ansvaret for å bygge opp et
-                eget komponentbibliotek i Figma. Jeg måtte sørge for at alt jeg tegnet – fra meldingsbobler og
-                svaralternativer til statusindikatorer – fulgte Helsenorges visuelle profil og krav til universell
-                utforming. Dette arbeidet krevde en dyp forståelse av hvordan man skalerer designelementer uten å bryte
-                helheten i en allerede etablert tjeneste.</p>
+            <p>Dette var den mest krevende delen av prosjektet. Helsenorge har et solid designsystem "Frankenstein", men
+                chatboten deres er levert av Helfo som vil si at designet for den ikke lå i designsystemet. Jeg måtte
+                derfor laget et
+                eget komponentbibliotek i Figma. Utfordringen var å skape noe nytt som samtidig føltes som en naturlig
+                del av Helsenorges visuelle profil og krav til universell
+                utforming.</p>
 
 
             <h3>Idéutvikling og konsepter</h3>
 
-
-            <p>For å sikre at vi ikke bare valgte de "kuleste" ideene, brukte vi en beslutningsmatrise for å evaluere
-                konseptene våre. Vi vurderte hver funksjon mot kritiske suksessfaktorer som pasientsikkerhet, universell
-                utforming og utviklingskostnad. Dette verktøyet ble viktig for å begrunne valgene våre overfor Norsk
-                Helsenett. Det gjorde det enkelt å forklare hvorfor vi for eksempel valgte bort direkte medisinske råd
-                til fordel for en veiledende tjeneste som trygt loser brukeren til riktig instans.</p>
+            <p>For å sikre at vi løste de riktige problemene, brukte vi en beslutningsmatrise for å vurdere konseptene
+                våre. Vi testet hver idé mot krav som nytteverdi, brukertillit, sikkerhet og personvern, samt i hvilken
+                grad løsningen kunne avlaste legevakten. Begge konseptene fikk lik poengsum, men vi valgte å gå videre
+                med det som hadde størst potensial for å gi reell nytteverdi for brukere og avlastning for
+                helsepersonell.</p>
 
             <img class="click-open" src="../assets/images/nhn/nhn-beslutningsmatrise.png" alt="">
 
             <h2 class="title short-underline">Deliver</h2>
-            <p>For å bygge løsningen brukte jeg en kombinasjon av Helsenorges eksisterende designsystem, "Frankenstein",
-                og spesialtilpassede elementer jeg tegnet selv. Siden systemet manglet støtte for samtalebasert design,
-                utviklet jeg egne komponenter som ivaretok helhetsinntrykket, men som var optimalisert for en chatbot.
-            </p>
 
-            <h3>Prototyping</h3>
-            <p>For å effektivisere prosessen brukte jeg Figma Make. Dette gjorde det mulig å raskt generere og koble
-                sammen skjermer, slik at jeg kunne bruke mer tid på å finpusse den logiske flyten og de interaktive
-                elementene. Resultatet ble en troverdig prototype som føltes som en integrert del av Helsenorge.</p>
+            <p>For å sikre at chatboten ble en trygg og pålitelig assistent, utarbeidet vi et rammeverk for Vera. Dette
+                fungerte som vårt styringsdokument gjennom hele designprosessen og definerte alt fra teknisk kildebruk
+                til språklig tonefall.</p>
+
 
             <img class="click-open" src="../assets/images/nhn/nhn-persona-vera.png" alt="">
 
+            <p></p>Vera er basert på RAG-teknologi (Retrieval-Augmented Generation), som betyr at hun utelukkende henter
+            informasjon fra kvalitetssikrede kilder som vi har satt til å være Helsenorge sine artikler og
+            Legevaktindeksen.no. Dette er nødvendig for å skille løsningen fra et vanlig google søk, hvor den henter
+            informasjon fra hele internett.</p>
+
+            <h3>Prototyping</h3>
+            <p>For å effektivisere prototypingen brukte jeg Figma Make. Det gjorde det mulig å raskt lage en klikkbar
+                prototype, slik at jeg kunne bruke tid til å finpusse den logiske flyten, teksten og de interaktive
+                detaljene.</p>
+
+            <p>I prototypen la jeg vekt på et klart språk uten medisinsk sjargong, der Vera anerkjenner brukerens
+                bekymringer uten å virke falsk. Jeg programmerte også inn en logikk for en enkel risikovurdering
+                (triagering), slik at prototypen i brukertestene faktisk kunne gi en troverdig henvisning til enten
+                legevakt eller egenbehandling.</p>
+
 
             <div class="display swap-content">
-
                 <div class="swap-text">
                     <h3>Løsningen</h3>
 
-                    <p>Løsningen vi utviklet er en KI-basert veileder integrert i Helsenorge, som hjelper brukere med å
-                        vurdere egen situasjon før de eventuelt kontakter legevakt.</p>
+                    <p>Den endelige løsningen er en KI-basert veileder integrert i Helsenorge. Tjenesten fungerer som en
+                        tryggere inngangsport enn google, som hjelper brukeren med å vurdere egen situasjon før de
+                        eventuelt kontakter legevakten.</p>
 
-
-                    <project-solution project="nhn">
+                    <h2>Siste versjon kommer snart</h2>
+                    <!--<project-solution project="nhn">
                         <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
                         <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
                         <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
-                    </project-solution>
-
+                    </project-solution> -->
 
                 </div>
 
             </div>
 
             <h3>Brukertesting</h3>
-            <p>Vi delte brukertestingen i to faser for å skille mellom den menneskelige samtalen og selve grensesnittet.
-                Dette ga oss verdifull data på både tillit og brukervennlighet.</p>
+            <p>Under brukertestingen ønsket vi å teste to ting. Den første var hvordan folk kommuniserer i en samtale
+                med chatboten, inkludert hvor mye informasjon de deler uoppfordret. Den andre var for å evaluere det
+                visuelle designet og hvor enkelt det var å finne frem til selve tjenesten. For å gjennomføre dette på en strukturert måte, utarbeidet vi testkort med ulike scenarioer som ble fargekodet etter formålet med oppgaven.</p>
 
-            <h4>Wizard of Oz: Hvordan snakker brukeren?</h4>
-            <p>I den første fasen gjennomførte vi en Wizard of Oz-test. Her simulerte vi en samtale der en fra
-                prosjektgruppen satt skjult og svarte som chatboten. Målet var å observere brukernes naturlige språkbruk
-                uten å bli begrenset av tekniske hindringer. Vi lærte mye om hvilke ord folk bruker for å beskrive
-                smerte (f.eks. "stikkende" vs "vondt"), og hvor mye informasjon de oppgir frivillig. Dette ble direkte
-                overført til hvordan vi utformet chatbotens svar og oppfølgingsspørsmål.</p>
-            <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
+            <img class="click-open" src="../assets/images/nhn/nhn-testcards.png" alt="">
 
-            <h4>Prototypetest: Opplevelse og navigasjon</h4>
+            <!--<h4>Prototypetest</h4>-->
+            <p>De grønne kortene ble brukt til å teste selve Figma-prototypen. Siden prototypen var bygget med forhåndsdefinerte svar, var vi avhengige av at testdeltakerne fulgte et bestemt forløp for at samtalen skulle gi mening. Ved å bruke disse kortene som et "manus", kunne vi validere om det visuelle grensesnittet og den planlagte logikken fungerte slik vi hadde tenkt.</p>
 
-            <p>I den andre fasen testet vi den faktiske Figma-prototypen med spesifikke scenarioer, som hodepine eller
-                akutte magesmerter. Her fokuserte vi på det visuelle grensesnittet og navigasjonen. Vi testet om
-                brukerne i det hele tatt fant frem til tjenesten, og hvordan de reagerte på knapper og
-                kildehenvisninger. Testen bekreftet at chatbotens "personlighet" og tonefall er avgjørende; den må føles
-                som en hjelpsom assistent fremfor en kald maskin for at brukeren skal føle seg trygg i en sårbar
-                situasjon.</p>
+           <!-- <h4>Wizard of Oz</h4>-->
+            <p>For å observere brukernes naturlige språkbruk uten begrensningene i prototypen, brukte vi de blå kortene. Disse inneholdt mer tilfeldige sykdomsforløp og ble brukt i en Wizard of Oz-test. Her satt en fra prosjektgruppen skjult og svarte manuelt som chatboten.</p>
+
+            <!--<h4>Funn</h4>-->
+            <p>Brukertestene ga oss verdifull innsikt i alt fra hvilke ord folk bruker for å beskrive smerte (for eks. "stikkende" vs. "vondt"), til hvor mye informasjon de velger å oppgi frivillig.</p>
 
         </div>
 
@@ -188,16 +192,12 @@
             <h2 class="short-underline">Hva har jeg lært fra dette prosjektet</h2>
 
             <p>
-                Arbeidet med Norsk Helsenett har gitt meg verdifull erfaring med å designe for komplekse systemer der
-                teknisk innovasjon møter strenge krav til sikkerhet:
+                Arbeidet med Norsk Helsenett har vært en skikkelig øyeåpner for hvor komplekst det faktisk er å designe tjenester som omhandler helsetjenesten. Jeg vet at vi med dette prosjektet bare har skrapt i overflaten, og det er helt tydelig at det kreves mye mer forskning og testing før en slik løsning er moden for faktisk bruk.
             </p>
 
-            <ul>
-                <li>Arbeidet med designsystemet "Frankenstein" lærte meg å videreutvikle komplekse systemer uten å bryte
-                    helheten i tjenesten.</li>
-                <li>Jeg har lært hvordan språkbruk og visuelle bekreftelser er helt avgjørende for brukeropplevelsen i
-                    KI-tjenester.</li>
-            </ul>
+            <p>Gjennom prosessen ble det klart at et slikt arbeid involverer utrolig mange parter utenom designere og brukere. Det er mange hensyn å ta når det kommer til nasjonale retningslinjer, personvern og vanskelige etiske dilemmaer. Det har vært spesielt lærerikt å sette seg inn i spørsmålene rundt ansvar, som hvem som egentlig sitter med skylden dersom VERA skulle gi en feilaktig vurdering.</p>
+
+            <p>Det har vært interessant å se i praksis hvor mye språket og små visuelle bekreftelser har å si for om folk tørr å stole på teknologien. Til syvende og sist handler det om at mennesket på andre siden av skjermen må føle seg trygg og ivaretatt for at løsningen skal ha en verdi.</p>
 
         </div>
 
