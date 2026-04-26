@@ -7,13 +7,13 @@
 
     //{ imgSrc: '../assets/images/IDG2000/IDG2000-front.png', description: 'Design i Helsetjenester', link: 'design-in-healthcare.html' },
 
-    { imgSrc: '../assets/images/norkart/norkart-front.png', description: 'Norkart', link: 'norkart.html' },
+    { imgSrc: '../assets/images/norkart/norkart-front.png', description: 'Utvikling av et varslingssenter', link: 'norkart.html' },
 
     //{ imgSrc: '../assets/images/IDG3750/IDG3750-front.png', description: 'Sensorisk og berøringsvennlig interaksjonsdesign', link: 'tangible-design.html' },
 
     //{ imgSrc: '../assets/images/luna/luna-front.png ', description: 'Luna Restaurant', link: 'luna.html' },
 
-    { imgSrc: '../assets/images/saltpepper/saltpepper-front.png', description: 'Salt & Pepper Gjøvik', link: 'saltpepper.html' },
+    { imgSrc: '../assets/images/saltpepper/saltpepper-front.png', description: 'Redesign av lokal restaurant i Gjøvik', link: 'saltpepper.html' },
 
 
     
