@@ -10,6 +10,8 @@
 
 .header-about {
     margin-bottom: 12px;
+    grid-template-columns: 1fr;
+        gap: 20px;
 }
 
 .about-img {
@@ -74,12 +76,15 @@
     padding-top: 15px;
 }
 
-    .about-text {
-        display: grid !important; /* !important for å sjekke om noe annet overstyrer */
-        grid-template-columns: auto 1fr;
-        align-items: center; /* Vertikal sentrering */
-        justify-content: start; /* Horisontal sentrering til venstre */
-        gap: 60px;
+
+.header-about {
+        display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
     }
 
     .about-img {
