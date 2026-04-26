@@ -1,7 +1,7 @@
  // Array of project data with internal links
  const projects = [
 
-    { imgSrc: '../assets/images/nhn/nhn-front.png', description: 'KI i helsetjenesten', link: 'norsk-helsenett.html' },
+    { imgSrc: '../assets/images/nhn/nhn-front.png', description: 'Kunstig intelligens i helsetjenesten', link: 'norsk-helsenett.html' },
     
     //{ imgSrc: '../assets/images/IDG2012/IDG2012-front.png', description: 'Webtilgjengelighet, Brukervennlighet og Etikk', link: 'web-accessibility.html' },
 
