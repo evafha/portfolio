@@ -169,7 +169,7 @@ ul {
         "work"
         "showcase1"
         "showcase2";
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 50px;
 
     a {
@@ -179,6 +179,10 @@ ul {
 
     a:hover {
         text-decoration: underline;
+    }
+
+    img {
+        margin: 0;
     }
 }
 
@@ -263,7 +267,9 @@ ul {
 
     .showcase1,
     .showcase2 {
-        @include grid-2;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     }
 
     .line {

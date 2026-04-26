@@ -758,7 +758,7 @@ ul {
 .my-work {
   display: grid;
   grid-template-areas: "work" "showcase1" "showcase2";
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 50px;
 }
 .my-work a {
@@ -767,6 +767,9 @@ ul {
 }
 .my-work a:hover {
   text-decoration: underline;
+}
+.my-work img {
+  margin: 0;
 }
 
 .work {
@@ -854,7 +857,7 @@ ul {
   .showcase2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 10px;
   }
   .line {
     margin: 40px auto;
