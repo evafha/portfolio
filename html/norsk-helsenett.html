@@ -30,14 +30,14 @@
 
     <prosjekt-header prosjekt-klasse="nhn" tittel="Norsk helsenett"
         beskrivelse="Norsk Helsenett leverer digital infrastruktur og har ansvar for driften av portalen helsenorge.no."
-        bilde-src="../assets/images/nhn/nhn-mockup.png" bilde-alt="Kommer">
+        bilde-src="../assets/images/nhn/nhn-mockup-front.png" bilde-alt="Kommer">
     </prosjekt-header>
 
     <main id="mainContent" class="norkart"> <!-- hopper til her -->
 
         <prosjekt-info overskrift="Om prosjektet" beskrivelse="Dette prosjektet ble gjennomført som bacheloroppgave i samarbeid med Norsk Helsenett. Bakgrunnen for prosjektet er et økende press på legevakten, der mange henvendelser skyldes usikkerhet heller enn akutte behov. Målet er å utforske hvordan ny teknologi kan hjelpe brukere å vurdere egen helsesituasjon før de kontakter legevakten. Vi kom fram til denne problemstillingen:
             <ul>
-                <q>Hvordan kan vi bruke kunstig intelligens til å gi pasienter riktig hjelp til riktig tid?</q>
+                <q>Hvordan kan vi bruke moderne teknologi til å gi pasienter riktig hjelp til riktig tid?</q>
             </ul>" rolle="UX-designer" tid="22 uker" verktoy="../assets/images/figma.png" alt="Figma logo">
         </prosjekt-info>
 
@@ -91,7 +91,7 @@
 
             <h3>Persona</h3>
 
-            <p>Basert på funnene våre utviklet vi to personaa som representerte en som trenger å ringe legevakten og en
+            <p>Basert på funnene våre utviklet vi to persona som representerte en som trenger å ringe legevakten og en
                 som kan vente. </p>
 
             <img class="click-open" src="../assets/images/nhn/nhn-persona-1.png" alt="">
@@ -134,7 +134,7 @@
 
             <img class="click-open" src="../assets/images/nhn/nhn-persona-vera.png" alt="">
 
-            <p></p>Vera er basert på RAG-teknologi (Retrieval-Augmented Generation), som betyr at hun utelukkende henter
+            <p></p>VERA er basert på RAG-teknologi (Retrieval-Augmented Generation), som betyr at hun utelukkende henter
             informasjon fra kvalitetssikrede kilder som vi har satt til å være Helsenorge sine artikler og
             Legevaktindeksen.no. Dette er nødvendig for å skille løsningen fra et vanlig google søk, hvor den henter
             informasjon fra hele internett.</p>
@@ -143,31 +143,13 @@
             <p>For å effektivisere prototypingen brukte jeg Figma Make. Det gjorde det mulig å raskt lage en klikkbar
                 prototype, slik at jeg kunne bruke tid til å finpusse den logiske flyten, teksten og de interaktive
                 detaljene.</p>
+                
 
             <p>I prototypen la jeg vekt på et klart språk uten medisinsk sjargong, der Vera anerkjenner brukerens
                 bekymringer uten å virke falsk. Jeg programmerte også inn en logikk for en enkel risikovurdering
                 (triagering), slik at prototypen i brukertestene faktisk kunne gi en troverdig henvisning til enten
                 legevakt eller egenbehandling.</p>
 
-
-            <div class="display swap-content">
-                <div class="swap-text">
-                    <h3>Løsningen</h3>
-
-                    <p>Den endelige løsningen er en KI-basert veileder integrert i Helsenorge. Tjenesten fungerer som en
-                        tryggere inngangsport enn google, som hjelper brukeren med å vurdere egen situasjon før de
-                        eventuelt kontakter legevakten.</p>
-
-                    <h2>Siste versjon kommer snart</h2>
-                    <!--<project-solution project="nhn">
-                        <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
-                        <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
-                        <img class="click-open" src="../assets/images/nhn/nhn-front.png" alt="">
-                    </project-solution> -->
-
-                </div>
-
-            </div>
 
             <h3>Brukertesting</h3>
             <p>Under brukertestingen ønsket vi å teste to ting. Den første var hvordan folk kommuniserer i en samtale
@@ -179,6 +161,8 @@
             <!--<h4>Prototypetest</h4>-->
             <p>De grønne kortene ble brukt til å teste selve Figma-prototypen. Siden prototypen var bygget med forhåndsdefinerte svar, var vi avhengige av at testdeltakerne fulgte et bestemt forløp for at samtalen skulle gi mening. Ved å bruke disse kortene som et "manus", kunne vi validere om det visuelle grensesnittet og den planlagte logikken fungerte slik vi hadde tenkt.</p>
 
+            <img class="click-open" src="../assets/images/nhn/nhn-prototype.png" alt="">
+
            <!-- <h4>Wizard of Oz</h4>-->
             <p>For å observere brukernes naturlige språkbruk uten begrensningene i prototypen, brukte vi de blå kortene. Disse inneholdt mer tilfeldige sykdomsforløp og ble brukt i en Wizard of Oz-test. Her satt en fra prosjektgruppen skjult og svarte manuelt som chatboten.</p>
 
@@ -187,6 +171,23 @@
 
         </div>
 
+ <div class="display swap-content">
+                <div class="swap-text">
+                    <h3>Løsningen</h3>
+
+                    <p>Den endelige løsningen er en KI-basert veileder integrert i Helsenorge. Tjenesten fungerer som en
+                        tryggere inngangsport enn google, som hjelper brukeren med å vurdere egen situasjon før de
+                        eventuelt kontakter legevakten. Under viser et eksempel på en samtale:</p>
+
+                    <project-solution project="nhn">
+                        <img class="click-open" src="../assets/images/nhn/nhn-mockup.png" alt="">
+                        <img class="click-open" src="../assets/images/nhn/nhn-mockup-1.png" alt="">
+                        <img class="click-open" src="../assets/images/nhn/nhn-mockup-2.png" alt="">
+                    </project-solution> 
+
+                </div>
+
+            </div>
 
         <div class="learned">
             <h2 class="short-underline">Hva har jeg lært fra dette prosjektet</h2>
