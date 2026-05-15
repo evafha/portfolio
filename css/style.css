@@ -674,6 +674,10 @@ p {
   margin: 0 auto;
 }
 
+.learned {
+  margin-top: 20px;
+}
+
 .solution,
 video {
   border-radius: 5px;
