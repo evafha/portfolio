@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository showcases a selection of my work in int
 
 ## About Me
 
-I am Eva, an ambitious Interaction Design student based in Gjøvik, currently delving into the fascinating world of web development with a keen eye for universal design and inclusivity.
+I am Eva, an ambitious Interaction Designer currently delving into the fascinating world of web development with an eye for universal design and inclusivity.
 
 ## Technologies
 
@@ -28,6 +28,6 @@ To view my portfolio, navigate through the following sections:
 If you’d like to get in touch with me, you can reach me at:
 
 - **Email**: evafhaugum@hotmail.com
-- **LinkedIn**: [Eva Fossen Haugum](https://www.linkedin.com/in/eva-fossen-haugum/)
+- **LinkedIn**: [Eva Fossen Haugum](https://www.linkedin.com/in/evafossenhaugum/)
 - **GitHub**: [Evafha](https://github.com/evafha)
 
